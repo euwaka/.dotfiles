@@ -31,14 +31,6 @@
 (require 'company)
 (global-company-mode)
 
-;;; org-mode
-(require 'org)
-(setq org-agenda-files '("~/org/tasks.org"))
-(global-set-key (kbd "C-c a") 'org-agenda)
-(setq org-agenda-skip-scheduled-if-done nil)
-(setq org-agenda-start-on-weekday nil)  
-(setq org-agenda-span 'week)            
-
 ;;; projectile
 (rc/require 'projectile)
 (require 'projectile)
