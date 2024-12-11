@@ -88,6 +88,13 @@
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
 
+;;; Snippets
+(rc/require 'yasnippet)
+(require 'yasnippet)
+(yas-global-mode 1)
+(setq yas-snippet-dirs
+      '( "~/snippets/" ))
+
 ;;; Packages that don't require nfiguration
 (rc/require
  'glsl-mode
