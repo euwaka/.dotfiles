@@ -23,6 +23,11 @@
 
 (blink-cursor-mode -1)
 
+;;; Neon-cat
+(rc/require 'nyan-mode)
+(require 'nyan-mode)
+(nyan-mode 1)
+
 ;;; No backup files
 (setq make-backup-files nil)
 
@@ -72,12 +77,12 @@
 ;;; multiple cursosr
 (rc/require 'multiple-cursors)
 
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C->")         'mc/mark-next-like-this)
-(global-set-key (kbd "C-<")         'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
-(global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
-(global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
+(global-set-key (kbd "C-c C-p") 'mc/edit-lines)
+(global-set-key (kbd "C->")     'mc/mark-next-like-this)
+(global-set-key (kbd "C-<")     'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-\"")    'mc/skip-to-next-like-this)
+(global-set-key (kbd "C-:")     'mc/skip-to-previous-like-this)
 
 ;;; LaTeX
 (rc/require 'auctex)
@@ -102,3 +107,5 @@
  'markdown-mode)
 
 (load-file custom-file)
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
