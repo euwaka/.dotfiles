@@ -1,5 +1,6 @@
 (defconst rc/frame-transparency 85)
 
+;;; Thanks @Tsoding
 (defun rc/toggle-transparency ()
   (interactive)
   (let ((frame-alpha (frame-parameter nil 'alpha)))
@@ -10,6 +11,9 @@
                                ,rc/frame-transparency))
       (set-frame-parameter nil 'alpha '(100 100)))))
 
+(global-set-key (kbd "C-c C-t") 'rc/toggle-transparency)
+
+;;; Thanks @Tsoding
 (defun rc/duplicate-line ()
   "Duplicate current line"
   (interactive)
@@ -22,4 +26,4 @@
     (move-beginning-of-line 1)
     (forward-char column)))
 
-(global-set-key (kbd "C-c C-d") 'rc/duplicate-line)
+(global-set-key (kbd "C-c C-g") 'rc/duplicate-line)
