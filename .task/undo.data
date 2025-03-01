@@ -1,0 +1,810 @@
+time 1740753530
+new [description:"Read Taskwarrior documents later" entry:"1740753530" modified:"1740753530" status:"pending" uuid:"ba6a3416-2ba1-4e18-8e6d-37f9a2b10eef"]
+---
+time 1740753538
+new [description:"pay bills" entry:"1740753538" modified:"1740753538" priority:"H" status:"pending" uuid:"2d98c622-a040-4f85-9cfa-4f9b4078fac5"]
+---
+time 1740753609
+old [description:"pay bills" entry:"1740753538" modified:"1740753538" priority:"H" status:"pending" uuid:"2d98c622-a040-4f85-9cfa-4f9b4078fac5"]
+new [description:"pay bills" end:"1740753609" entry:"1740753538" modified:"1740753609" priority:"H" status:"completed" uuid:"2d98c622-a040-4f85-9cfa-4f9b4078fac5"]
+---
+time 1740753617
+old [description:"Read Taskwarrior documents later" entry:"1740753530" modified:"1740753530" status:"pending" uuid:"ba6a3416-2ba1-4e18-8e6d-37f9a2b10eef"]
+new [description:"Read Taskwarrior documents later" end:"1740753616" entry:"1740753530" modified:"1740753617" status:"deleted" uuid:"ba6a3416-2ba1-4e18-8e6d-37f9a2b10eef"]
+---
+time 1740754089
+new [description:"Upload linalg hw2 on github" due:"1740697200" entry:"1740754089" modified:"1740754089" priority:"L" project:"college" status:"pending" uuid:"0e9f962b-12a5-4e94-86c5-1f29d192e626"]
+---
+time 1740754199
+new [description:"read 3.2 and 3.4 in griffith" due:"1740870000" entry:"1740754199" modified:"1740754199" priority:"H" project:"college" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"32bc124d-b48c-4dd1-9594-f3bf0dec784d"]
+---
+time 1740754236
+new [description:"make 3: 2, 7, 29, 32, 33 in griffith" due:"1740870000" entry:"1740754236" modified:"1740754236" priority:"H" project:"college" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"c20b0373-420b-4203-9245-fba31719c839"]
+---
+time 1740754264
+new [description:"read 4.1 and 4.2 in griffith" due:"1740870000" entry:"1740754264" modified:"1740754264" priority:"H" project:"college" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"589a1aa1-c1e2-4512-b301-569f20249e82"]
+---
+time 1740754286
+new [description:"make 4: 3, 4, 5, 9, 10, 11" due:"1740870000" entry:"1740754286" modified:"1740754286" priority:"H" project:"college" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"96ea8c6e-fe4e-442d-848a-71757ddb4e26"]
+---
+time 1740754414
+new [description:"write the report (methods, q1, q2, conclusion, abstract, resultsQ1, resultsQ2, discQ1, discQ2, errQ1, errQ2, visuals)" due:"1741179600" entry:"1740754414" modified:"1740754414" priority:"H" project:"college" status:"pending" tags:"EM,lab,report" tags_EM:"x" tags_lab:"x" tags_report:"x" uuid:"3f26f672-c6c8-42ff-aeec-0fdec3ebd4b2"]
+---
+time 1740754442
+new [description:"submit capacitors lab on github" entry:"1740754442" modified:"1740754442" priority:"L" project:"college" status:"pending" tags:"org" tags_org:"x" uuid:"cc112f9f-658b-4c70-a63e-59dc55998094"]
+---
+time 1740754542
+new [description:"write the report for the LPM lab with Lucas" due:"1740956340" entry:"1740754542" modified:"1740754542" priority:"H" project:"college" status:"pending" tags:"DSA,lab,report" tags_DSA:"x" tags_lab:"x" tags_report:"x" uuid:"c1c5d33c-af5a-43fd-9b9f-e999ef08a7a7"]
+---
+time 1740754566
+new [description:"finish part 1 lpm" due:"1740956340" entry:"1740754566" modified:"1740754566" priority:"H" project:"college" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"56d328a6-30a1-457d-a0f1-a02b455a78cf"]
+---
+time 1740754570
+new [description:"finish part 2 lpm" due:"1740956340" entry:"1740754570" modified:"1740754570" priority:"H" project:"college" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"b27d5caa-dfb9-489a-9542-690dbb71cb0e"]
+---
+time 1740754595
+new [description:"upload lpm report on github from overleaf" entry:"1740754595" modified:"1740754595" priority:"L" project:"college" status:"pending" tags:"DSA,org" tags_DSA:"x" tags_org:"x" uuid:"6c6c772b-8cfb-4e89-8986-b4c15d778df1"]
+---
+time 1740754692
+old [description:"read 3.2 and 3.4 in griffith" due:"1740870000" entry:"1740754199" modified:"1740754199" priority:"H" project:"college" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"32bc124d-b48c-4dd1-9594-f3bf0dec784d"]
+new [description:"read 3.2 and 3.4 in griffith" due:"1740870000" entry:"1740754199" modified:"1740754692" priority:"H" project:"college" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"32bc124d-b48c-4dd1-9594-f3bf0dec784d" xp:"10"]
+---
+time 1740754698
+old [description:"make 3: 2, 7, 29, 32, 33 in griffith" due:"1740870000" entry:"1740754236" modified:"1740754236" priority:"H" project:"college" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"c20b0373-420b-4203-9245-fba31719c839"]
+new [description:"make 3: 2, 7, 29, 32, 33 in griffith" due:"1740870000" entry:"1740754236" modified:"1740754698" priority:"H" project:"college" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"c20b0373-420b-4203-9245-fba31719c839" xp:"30"]
+---
+time 1740754702
+old [description:"read 4.1 and 4.2 in griffith" due:"1740870000" entry:"1740754264" modified:"1740754264" priority:"H" project:"college" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"589a1aa1-c1e2-4512-b301-569f20249e82"]
+new [description:"read 4.1 and 4.2 in griffith" due:"1740870000" entry:"1740754264" modified:"1740754702" priority:"H" project:"college" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"589a1aa1-c1e2-4512-b301-569f20249e82" xp:"10"]
+---
+time 1740754710
+old [description:"make 4: 3, 4, 5, 9, 10, 11" due:"1740870000" entry:"1740754286" modified:"1740754286" priority:"H" project:"college" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"96ea8c6e-fe4e-442d-848a-71757ddb4e26"]
+new [description:"make 4: 3, 4, 5, 9, 10, 11" due:"1740870000" entry:"1740754286" modified:"1740754710" priority:"H" project:"college" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"96ea8c6e-fe4e-442d-848a-71757ddb4e26" xp:"30"]
+---
+time 1740754733
+old [description:"write the report for the LPM lab with Lucas" due:"1740956340" entry:"1740754542" modified:"1740754542" priority:"H" project:"college" status:"pending" tags:"DSA,lab,report" tags_DSA:"x" tags_lab:"x" tags_report:"x" uuid:"c1c5d33c-af5a-43fd-9b9f-e999ef08a7a7"]
+new [description:"write the report for the LPM lab with Lucas" due:"1740956340" entry:"1740754542" modified:"1740754733" priority:"H" project:"college" status:"pending" tags:"DSA,lab,report" tags_DSA:"x" tags_lab:"x" tags_report:"x" uuid:"c1c5d33c-af5a-43fd-9b9f-e999ef08a7a7" xp:"40"]
+---
+time 1740754740
+old [description:"finish part 1 lpm" due:"1740956340" entry:"1740754566" modified:"1740754566" priority:"H" project:"college" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"56d328a6-30a1-457d-a0f1-a02b455a78cf"]
+new [description:"finish part 1 lpm" due:"1740956340" entry:"1740754566" modified:"1740754740" priority:"H" project:"college" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"56d328a6-30a1-457d-a0f1-a02b455a78cf" xp:"50"]
+---
+time 1740754744
+old [description:"finish part 2 lpm" due:"1740956340" entry:"1740754570" modified:"1740754570" priority:"H" project:"college" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"b27d5caa-dfb9-489a-9542-690dbb71cb0e"]
+new [description:"finish part 2 lpm" due:"1740956340" entry:"1740754570" modified:"1740754744" priority:"H" project:"college" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"b27d5caa-dfb9-489a-9542-690dbb71cb0e" xp:"50"]
+---
+time 1740754753
+old [description:"write the report (methods, q1, q2, conclusion, abstract, resultsQ1, resultsQ2, discQ1, discQ2, errQ1, errQ2, visuals)" due:"1741179600" entry:"1740754414" modified:"1740754414" priority:"H" project:"college" status:"pending" tags:"EM,lab,report" tags_EM:"x" tags_lab:"x" tags_report:"x" uuid:"3f26f672-c6c8-42ff-aeec-0fdec3ebd4b2"]
+new [description:"write the report (methods, q1, q2, conclusion, abstract, resultsQ1, resultsQ2, discQ1, discQ2, errQ1, errQ2, visuals)" due:"1741179600" entry:"1740754414" modified:"1740754753" priority:"H" project:"college" status:"pending" tags:"EM,lab,report" tags_EM:"x" tags_lab:"x" tags_report:"x" uuid:"3f26f672-c6c8-42ff-aeec-0fdec3ebd4b2" xp:"40"]
+---
+time 1740754761
+old [description:"Upload linalg hw2 on github" due:"1740697200" entry:"1740754089" modified:"1740754089" priority:"L" project:"college" status:"pending" uuid:"0e9f962b-12a5-4e94-86c5-1f29d192e626"]
+new [description:"Upload linalg hw2 on github" due:"1740697200" entry:"1740754089" modified:"1740754761" priority:"L" project:"college" status:"pending" uuid:"0e9f962b-12a5-4e94-86c5-1f29d192e626" xp:"1"]
+---
+time 1740754766
+old [description:"upload lpm report on github from overleaf" entry:"1740754595" modified:"1740754595" priority:"L" project:"college" status:"pending" tags:"DSA,org" tags_DSA:"x" tags_org:"x" uuid:"6c6c772b-8cfb-4e89-8986-b4c15d778df1"]
+new [description:"upload lpm report on github from overleaf" entry:"1740754595" modified:"1740754766" priority:"L" project:"college" status:"pending" tags:"DSA,org" tags_DSA:"x" tags_org:"x" uuid:"6c6c772b-8cfb-4e89-8986-b4c15d778df1" xp:"1"]
+---
+time 1740754772
+old [description:"submit capacitors lab on github" entry:"1740754442" modified:"1740754442" priority:"L" project:"college" status:"pending" tags:"org" tags_org:"x" uuid:"cc112f9f-658b-4c70-a63e-59dc55998094"]
+new [description:"submit capacitors lab on github" entry:"1740754442" modified:"1740754772" priority:"L" project:"college" status:"pending" tags:"org" tags_org:"x" uuid:"cc112f9f-658b-4c70-a63e-59dc55998094" xp:"1"]
+---
+time 1740754896
+new [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" entry:"1740754896" modified:"1740754896" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+---
+time 1740754984
+new [description:"nutrition good for day" due:"1740862800" entry:"1740754984" modified:"1740754984" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+---
+time 1740755005
+new [description:"well-being and off the computer" due:"1740862800" entry:"1740755005" modified:"1740755005" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+---
+time 1740755013
+new [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" entry:"1740755013" imask:"0" modified:"1740754896" parent:"95d65828-3249-4f3a-8f8e-35448a051bc0" project:"glowup" recur:"daily" rtype:"periodic" status:"pending" tags:"habit" tags_habit:"x" uuid:"4781a118-472d-4e8b-98dc-414da7fdace0"]
+---
+time 1740755013
+old [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" entry:"1740754896" modified:"1740754896" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+new [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" entry:"1740754896" mask:"-" modified:"1740755013" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+---
+time 1740755013
+new [description:"nutrition good for day" due:"1740862800" entry:"1740755013" imask:"0" modified:"1740754984" parent:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed" project:"glowup" recur:"daily" rtype:"periodic" status:"pending" tags:"habit" tags_habit:"x" uuid:"a6496526-7315-4e48-8416-d27f805194e7"]
+---
+time 1740755013
+old [description:"nutrition good for day" due:"1740862800" entry:"1740754984" modified:"1740754984" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+new [description:"nutrition good for day" due:"1740862800" entry:"1740754984" mask:"-" modified:"1740755013" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+---
+time 1740755013
+new [description:"well-being and off the computer" due:"1740862800" entry:"1740755013" imask:"0" modified:"1740755005" parent:"be19f0cc-4c65-4c9b-b60c-0111403c1613" project:"glowup" recur:"daily" rtype:"periodic" status:"pending" tags:"habit" tags_habit:"x" uuid:"813ac930-2335-4241-a62e-e17b1f01830f"]
+---
+time 1740755013
+old [description:"well-being and off the computer" due:"1740862800" entry:"1740755005" modified:"1740755005" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+new [description:"well-being and off the computer" due:"1740862800" entry:"1740755005" mask:"-" modified:"1740755013" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+---
+time 1740755060
+new [description:"configure taskwarrior (+read docs)" due:"1740870000" entry:"1740755060" modified:"1740755060" priority:"M" project:"glowup" status:"pending" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"f7c397a4-3143-4d66-908e-fde1ede057a1" xp:"5"]
+---
+time 1740755069
+new [description:"configure calcurse (+read docs)" due:"1740870000" entry:"1740755069" modified:"1740755069" priority:"M" project:"glowup" status:"pending" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"ddc2c1c6-48d2-4aee-b852-faf32889f391" xp:"5"]
+---
+time 1740755120
+new [description:"setup an initial nutrition diet" due:"1741302000" entry:"1740755120" modified:"1740755120" priority:"M" project:"glowup" status:"pending" tags:"health,reading,research" tags_health:"x" tags_reading:"x" tags_research:"x" uuid:"b19d336e-65f5-47f4-bdb1-6161fa0ab8db" xp:"40"]
+---
+time 1740755151
+new [description:"create the gym\/run tracking system" due:"1741302000" entry:"1740755151" modified:"1740755151" priority:"M" project:"glowup" status:"pending" tags:"health,research" tags_health:"x" tags_research:"x" uuid:"5d9e0f93-f991-45ca-8753-62d5113b3efd" xp:"10"]
+---
+time 1740755218
+new [description:"running and stretching" due:"1740862800" entry:"1740755218" modified:"1740755218" priority:"H" project:"glowup" status:"pending" tags:"habit" tags_habit:"x" uuid:"7190ec53-d1cf-4406-bd3f-b4f62a17b43d" xp:"15"]
+---
+time 1740763659
+new [description:"setup beautiful terminal" entry:"1740763659" modified:"1740763659" priority:"M" project:"glowup" status:"pending" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"fe0e16f8-0ca7-4a54-9f7b-ec047f0dec63"]
+---
+time 1740763680
+new [description:"setup minimal i3wm setup and study the main keybindings" entry:"1740763680" modified:"1740763680" priority:"H" project:"glowup" status:"pending" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"294bc5d0-0ba0-4b81-a230-589f508bcdfc"]
+---
+time 1740763712
+new [description:"setup the nerd font (no fancy icons)" entry:"1740763712" modified:"1740763712" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"092e9ade-eb1b-452d-b05c-58ff2e1b44bd"]
+---
+time 1740763743
+new [description:"fix rc\/ rexim stuff" entry:"1740763743" modified:"1740763743" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"83a16d8c-3650-42ad-8a1e-4a16101fdea8"]
+---
+time 1740763759
+new [description:"why i need relative numbers + goto-line" entry:"1740763759" modified:"1740763759" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"8d173f96-b99c-41a4-898a-4f3e5e0a9204"]
+---
+time 1740763793
+new [description:"multiple-cursors" entry:"1740763793" modified:"1740763793" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5adbed7e-0a19-483a-9967-345c78192a39" xp:"5"]
+---
+time 1740763798
+new [description:"company" entry:"1740763798" modified:"1740763798" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ed16535f-4710-4e49-b51d-10ac887c313d" xp:"5"]
+---
+time 1740763804
+new [description:"projectile" entry:"1740763804" modified:"1740763804" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b5578142-da3b-41b7-8d80-030910b9ee6a" xp:"5"]
+---
+time 1740763814
+new [description:"improve compilation buffer" entry:"1740763814" modified:"1740763814" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4a8d276c-6846-487e-ad23-e778ecc164e5" xp:"5"]
+---
+time 1740763830
+new [description:"setup & study environment for LaTeX" entry:"1740763830" modified:"1740763830" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"cc5f6407-74fb-43b0-8b7a-bd9b3f79ea59" xp:"5"]
+---
+time 1740763840
+new [description:"helm" entry:"1740763840" modified:"1740763840" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b279ac81-c9fc-4a99-a1dd-fd5d2e85f2d5" xp:"5"]
+---
+time 1740763844
+new [description:"magit" entry:"1740763844" modified:"1740763844" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a6779f38-0198-4d3d-b293-f30effefacba" xp:"5"]
+---
+time 1740763860
+new [description:"setup lsp for C\/C++ and Python" entry:"1740763860" modified:"1740763860" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2926388f-cb0a-4b17-abf2-8005c32ad0f8" xp:"5"]
+---
+time 1740763868
+new [description:"origami" entry:"1740763868" modified:"1740763868" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"563b86f8-1f34-4594-a0ea-9566068ea48c" xp:"5"]
+---
+time 1740763878
+new [description:"emacs-dashboard\/englight" entry:"1740763878" modified:"1740763878" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"721565bd-40a4-4e31-b4a0-ac1ebf8558f4" xp:"5"]
+---
+time 1740763887
+new [description:"workgroups 2\/desktop" entry:"1740763887" modified:"1740763887" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b7ca948c-673e-427c-a8c3-60ea68cf5976" xp:"5"]
+---
+time 1740763897
+new [description:"beacon" entry:"1740763897" modified:"1740763897" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"bb184ce1-3e87-458f-bbcc-58a1b2ff2f0a" xp:"5"]
+---
+time 1740763901
+new [description:"sideline" entry:"1740763901" modified:"1740763901" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"49afd0ec-13ee-4b01-bcc0-556acaad8e2d" xp:"5"]
+---
+time 1740763909
+new [description:"winner-mode or zoom" entry:"1740763909" modified:"1740763909" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"96d3c8a6-6d05-4843-9da4-1aae77f508c3" xp:"5"]
+---
+time 1740763915
+new [description:"goto-line" entry:"1740763915" modified:"1740763915" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31914400-2a05-4ecb-b71e-afdb244d70e8" xp:"5"]
+---
+time 1740763922
+new [description:"blink-search" entry:"1740763922" modified:"1740763922" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4df6ded6-8afa-49b4-8ff2-e876d558bfd4" xp:"5"]
+---
+time 1740763928
+new [description:"awesome-tray" entry:"1740763928" modified:"1740763928" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5bd11bbb-c413-494c-bb7e-ef7ac3d364cf" xp:"5"]
+---
+time 1740763935
+new [description:"dimmer.el" entry:"1740763935" modified:"1740763935" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"283eb2bb-bc9a-4190-8cc3-a41002e819e6" xp:"5"]
+---
+time 1740763942
+new [description:"indent-guide" entry:"1740763942" modified:"1740763942" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ac45fd07-e900-4e72-89ff-5c62567c7533" xp:"5"]
+---
+time 1740763949
+new [description:"electric-minor-mode" entry:"1740763949" modified:"1740763949" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"81f2ddd6-aaa1-48eb-b7af-c3a602dbd83c" xp:"5"]
+---
+time 1740763951
+new [description:"electric-minor-mode" entry:"1740763951" modified:"1740763951" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"e070112e-2fc5-47f0-b521-e7d53c81d1af" xp:"5"]
+---
+time 1740763963
+new [description:"undo-tree" entry:"1740763963" modified:"1740763963" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31c2b473-2c4a-445e-b8e0-e0a17be8cfe9" xp:"5"]
+---
+time 1740763969
+new [description:"yasnippets" entry:"1740763969" modified:"1740763969" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"908a6003-b873-4ffc-8b31-e30d2e9336cf" xp:"5"]
+---
+time 1740763978
+new [description:"setup jump to definition" entry:"1740763978" modified:"1740763978" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2c308402-7b43-40dd-9812-81bdc9c5ce1d" xp:"5"]
+---
+time 1740763983
+new [description:"flycheck" entry:"1740763983" modified:"1740763983" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"de11bdbb-5073-4196-ba49-b8fd97ef716d" xp:"5"]
+---
+time 1740764023
+old [description:"setup lsp for C\/C++ and Python" entry:"1740763860" modified:"1740763860" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2926388f-cb0a-4b17-abf2-8005c32ad0f8" xp:"5"]
+new [description:"setup lsp for c\/c++ and python + cc-mode, clang-format, ebrowse, elpy, makefile-mode, helm-make" entry:"1740763860" modified:"1740764023" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2926388f-cb0a-4b17-abf2-8005c32ad0f8" xp:"5"]
+---
+time 1740764050
+new [description:"which-key" entry:"1740764050" modified:"1740764050" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b84a0350-bf05-44ad-98da-c8429b722693" xp:"5"]
+---
+time 1740764055
+new [description:"cheatsheet" entry:"1740764055" modified:"1740764055" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"1c9c9374-4a7d-4681-962a-31044ff98238" xp:"5"]
+---
+time 1740764061
+new [description:"eshell" entry:"1740764061" modified:"1740764061" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"872d41a5-d3e1-4bb1-8f41-6e3ce6f098e4" xp:"5"]
+---
+time 1740764065
+new [description:"markdown-mode" entry:"1740764065" modified:"1740764065" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"12a00e0a-c75f-403d-9d3b-f5128a22c620" xp:"5"]
+---
+time 1740764069
+new [description:"parrot" entry:"1740764069" modified:"1740764069" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"35a03962-2c61-444d-ba51-d1dffda50f02" xp:"5"]
+---
+time 1740764073
+new [description:"Dired" entry:"1740764073" modified:"1740764073" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a005d323-64ad-4e55-968b-c225b73987c1" xp:"5"]
+---
+time 1740764090
+new [description:"transfer from Spotify" entry:"1740764090" modified:"1740764090" priority:"H" project:"glowup" status:"pending" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"1ae3e498-6eae-47b1-8404-4f369f8fd08b"]
+---
+time 1740764112
+new [description:"setup phone to use all the organiztion tools i come up with so far" entry:"1740764112" modified:"1740764112" priority:"M" project:"glowup" status:"pending" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"80def761-7064-4862-ac79-dd1e27e86ad6"]
+---
+time 1740764179
+new [description:"project chinese" entry:"1740764179" modified:"1740764179" status:"pending" uuid:"4d86e111-fd1b-4807-a1b4-22512bc3037b"]
+---
+time 1740764234
+old [description:"project chinese" entry:"1740764179" modified:"1740764179" status:"pending" uuid:"4d86e111-fd1b-4807-a1b4-22512bc3037b"]
+new [description:"project chinese" end:"1740764232" entry:"1740764179" modified:"1740764234" status:"deleted" uuid:"4d86e111-fd1b-4807-a1b4-22512bc3037b"]
+---
+time 1740764744
+new [description:"study car theory for 2 hours" due:"1740862800" entry:"1740764744" modified:"1740764744" project:"hobby" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c"]
+---
+time 1740764845
+new [description:"visit Stadskanaal grandoptical to check eyes | or make an appointment with huisarts" due:"1740870000" entry:"1740764845" modified:"1740764845" priority:"H" project:"personal" status:"pending" uuid:"5b060fe3-de04-43fc-b153-9ecbcaafa8a4"]
+---
+time 1740764857
+new [description:"read about laser correction" due:"1740870000" entry:"1740764857" modified:"1740764857" priority:"H" project:"personal" status:"pending" uuid:"4ed37ff7-c751-421e-b408-dd9ce21716fd"]
+---
+time 1740764880
+new [description:"RDW get the driving thing back" due:"1740870000" entry:"1740764880" modified:"1740764880" priority:"H" project:"personal" status:"pending" uuid:"bf1af21b-0202-4d06-a26b-a42df3f16d18"]
+---
+time 1740764993
+new [description:"study hands-on assembly" entry:"1740764993" modified:"1740764993" project:"later" status:"pending" uuid:"458465bc-8960-4b26-b126-afbe51857cf8"]
+---
+time 1740765014
+new [description:"start going through HSK1" entry:"1740765014" modified:"1740765014" project:"later" status:"pending" uuid:"b76e1222-5a6f-49df-a72d-673973410f69"]
+---
+time 1740765036
+new [description:"read Tonke Dragt de brief voor de koning" entry:"1740765036" modified:"1740765036" project:"later" status:"pending" uuid:"5fb3dff6-6c98-4e4e-9823-24a5c34c1c43"]
+---
+time 1740765047
+new [description:"read saposkly Behave" entry:"1740765047" modified:"1740765047" project:"later" status:"pending" uuid:"7dc9bf4d-7537-460a-b8d7-baba85dfc714"]
+---
+time 1740765103
+new [description:"clear" entry:"1740765103" modified:"1740765103" project:"later" status:"pending" uuid:"ca4b56b9-2478-43f0-a6ca-ac94e97140f9"]
+---
+time 1740765108
+new [description:"study car theory for 2 hours" due:"1740862800" entry:"1740765108" imask:"0" modified:"1740764744" parent:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c" project:"hobby" recur:"daily" rtype:"periodic" status:"pending" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7695ed8c-304a-4016-8607-81b7c64c6c17"]
+---
+time 1740765108
+old [description:"study car theory for 2 hours" due:"1740862800" entry:"1740764744" modified:"1740764744" project:"hobby" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c"]
+new [description:"study car theory for 2 hours" due:"1740862800" entry:"1740764744" mask:"-" modified:"1740765108" project:"hobby" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c"]
+---
+time 1740765118
+old [description:"clear" entry:"1740765103" modified:"1740765103" project:"later" status:"pending" uuid:"ca4b56b9-2478-43f0-a6ca-ac94e97140f9"]
+new [description:"clear" end:"1740765116" entry:"1740765103" modified:"1740765118" project:"later" status:"deleted" uuid:"ca4b56b9-2478-43f0-a6ca-ac94e97140f9"]
+---
+time 1740765999
+new [description:"setup printer and print shit for katy" entry:"1740765999" modified:"1740765999" project:"personal" status:"pending" uuid:"01f1a1c9-1cf7-408d-9b16-7742472d51ab"]
+---
+time 1740766117
+old [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" entry:"1740754896" mask:"-" modified:"1740755013" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+new [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" entry:"1740754896" mask:"X" modified:"1740766117" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+---
+time 1740766117
+old [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" entry:"1740755013" imask:"0" modified:"1740754896" parent:"95d65828-3249-4f3a-8f8e-35448a051bc0" project:"glowup" recur:"daily" rtype:"periodic" status:"pending" tags:"habit" tags_habit:"x" uuid:"4781a118-472d-4e8b-98dc-414da7fdace0"]
+new [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" end:"1740766114" entry:"1740755013" imask:"0" modified:"1740766117" parent:"95d65828-3249-4f3a-8f8e-35448a051bc0" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"4781a118-472d-4e8b-98dc-414da7fdace0"]
+---
+time 1740766118
+old [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" entry:"1740754896" mask:"X" modified:"1740766117" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+new [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" end:"1740766118" entry:"1740754896" mask:"X" modified:"1740766118" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+---
+time 1740766118
+old [description:"nutrition good for day" due:"1740862800" entry:"1740754984" mask:"-" modified:"1740755013" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+new [description:"nutrition good for day" due:"1740862800" entry:"1740754984" mask:"X" modified:"1740766118" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+---
+time 1740766118
+old [description:"nutrition good for day" due:"1740862800" entry:"1740755013" imask:"0" modified:"1740754984" parent:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed" project:"glowup" recur:"daily" rtype:"periodic" status:"pending" tags:"habit" tags_habit:"x" uuid:"a6496526-7315-4e48-8416-d27f805194e7"]
+new [description:"nutrition good for day" due:"1740862800" end:"1740766118" entry:"1740755013" imask:"0" modified:"1740766118" parent:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"a6496526-7315-4e48-8416-d27f805194e7"]
+---
+time 1740766119
+old [description:"nutrition good for day" due:"1740862800" entry:"1740754984" mask:"X" modified:"1740766118" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+new [description:"nutrition good for day" due:"1740862800" end:"1740766119" entry:"1740754984" mask:"X" modified:"1740766119" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+---
+time 1740766119
+old [description:"well-being and off the computer" due:"1740862800" entry:"1740755005" mask:"-" modified:"1740755013" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+new [description:"well-being and off the computer" due:"1740862800" entry:"1740755005" mask:"X" modified:"1740766119" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+---
+time 1740766119
+old [description:"well-being and off the computer" due:"1740862800" entry:"1740755013" imask:"0" modified:"1740755005" parent:"be19f0cc-4c65-4c9b-b60c-0111403c1613" project:"glowup" recur:"daily" rtype:"periodic" status:"pending" tags:"habit" tags_habit:"x" uuid:"813ac930-2335-4241-a62e-e17b1f01830f"]
+new [description:"well-being and off the computer" due:"1740862800" end:"1740766119" entry:"1740755013" imask:"0" modified:"1740766119" parent:"be19f0cc-4c65-4c9b-b60c-0111403c1613" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"813ac930-2335-4241-a62e-e17b1f01830f"]
+---
+time 1740766119
+old [description:"well-being and off the computer" due:"1740862800" entry:"1740755005" mask:"X" modified:"1740766119" project:"glowup" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+new [description:"well-being and off the computer" due:"1740862800" end:"1740766119" entry:"1740755005" mask:"X" modified:"1740766119" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+---
+time 1740766135
+old [description:"running and stretching" due:"1740862800" entry:"1740755218" modified:"1740755218" priority:"H" project:"glowup" status:"pending" tags:"habit" tags_habit:"x" uuid:"7190ec53-d1cf-4406-bd3f-b4f62a17b43d" xp:"15"]
+new [description:"running and stretching" due:"1740862800" end:"1740766134" entry:"1740755218" modified:"1740766135" priority:"H" project:"glowup" status:"deleted" tags:"habit" tags_habit:"x" uuid:"7190ec53-d1cf-4406-bd3f-b4f62a17b43d" xp:"15"]
+---
+time 1740766156
+old [description:"study car theory for 2 hours" due:"1740862800" entry:"1740764744" mask:"-" modified:"1740765108" project:"hobby" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c"]
+new [description:"study car theory for 2 hours" due:"1740862800" entry:"1740764744" mask:"X" modified:"1740766156" project:"hobby" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c"]
+---
+time 1740766156
+old [description:"study car theory for 2 hours" due:"1740862800" entry:"1740765108" imask:"0" modified:"1740764744" parent:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c" project:"hobby" recur:"daily" rtype:"periodic" status:"pending" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7695ed8c-304a-4016-8607-81b7c64c6c17"]
+new [description:"study car theory for 2 hours" due:"1740862800" end:"1740766155" entry:"1740765108" imask:"0" modified:"1740766156" parent:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c" project:"hobby" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7695ed8c-304a-4016-8607-81b7c64c6c17"]
+---
+time 1740766157
+old [description:"study car theory for 2 hours" due:"1740862800" entry:"1740764744" mask:"X" modified:"1740766156" project:"hobby" recur:"daily" rtype:"periodic" status:"recurring" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c"]
+new [description:"study car theory for 2 hours" due:"1740862800" end:"1740766157" entry:"1740764744" mask:"X" modified:"1740766157" project:"hobby" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit,study" tags_habit:"x" tags_study:"x" uuid:"7fabd746-f642-4a13-a33a-36ec3e6e1b4c"]
+---
+time 1740769373
+old [description:"setup beautiful terminal" entry:"1740763659" modified:"1740763659" priority:"M" project:"glowup" status:"pending" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"fe0e16f8-0ca7-4a54-9f7b-ec047f0dec63"]
+new [description:"setup beautiful terminal" end:"1740769373" entry:"1740763659" modified:"1740769373" priority:"M" project:"glowup" status:"completed" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"fe0e16f8-0ca7-4a54-9f7b-ec047f0dec63"]
+---
+time 1740772743
+old [description:"configure calcurse (+read docs)" due:"1740870000" entry:"1740755069" modified:"1740755069" priority:"M" project:"glowup" status:"pending" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"ddc2c1c6-48d2-4aee-b852-faf32889f391" xp:"5"]
+new [description:"configure calcurse (+read docs)" due:"1740870000" end:"1740772743" entry:"1740755069" modified:"1740772743" priority:"M" project:"glowup" status:"completed" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"ddc2c1c6-48d2-4aee-b852-faf32889f391" xp:"5"]
+---
+time 1740772814
+old [description:"read 3.2 and 3.4 in griffith" due:"1740870000" entry:"1740754199" modified:"1740754692" priority:"H" project:"college" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"32bc124d-b48c-4dd1-9594-f3bf0dec784d" xp:"10"]
+new [description:"read 3.2 and 3.4 in griffith" due:"1740870000" entry:"1740754199" modified:"1740772814" priority:"H" project:"college.EM" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"32bc124d-b48c-4dd1-9594-f3bf0dec784d" xp:"10"]
+---
+time 1740772814
+old [description:"make 3: 2, 7, 29, 32, 33 in griffith" due:"1740870000" entry:"1740754236" modified:"1740754698" priority:"H" project:"college" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"c20b0373-420b-4203-9245-fba31719c839" xp:"30"]
+new [description:"make 3: 2, 7, 29, 32, 33 in griffith" due:"1740870000" entry:"1740754236" modified:"1740772814" priority:"H" project:"college.EM" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"c20b0373-420b-4203-9245-fba31719c839" xp:"30"]
+---
+time 1740772814
+old [description:"read 4.1 and 4.2 in griffith" due:"1740870000" entry:"1740754264" modified:"1740754702" priority:"H" project:"college" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"589a1aa1-c1e2-4512-b301-569f20249e82" xp:"10"]
+new [description:"read 4.1 and 4.2 in griffith" due:"1740870000" entry:"1740754264" modified:"1740772814" priority:"H" project:"college.EM" status:"pending" tags:"EM,reading" tags_EM:"x" tags_reading:"x" uuid:"589a1aa1-c1e2-4512-b301-569f20249e82" xp:"10"]
+---
+time 1740772814
+old [description:"make 4: 3, 4, 5, 9, 10, 11" due:"1740870000" entry:"1740754286" modified:"1740754710" priority:"H" project:"college" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"96ea8c6e-fe4e-442d-848a-71757ddb4e26" xp:"30"]
+new [description:"make 4: 3, 4, 5, 9, 10, 11" due:"1740870000" entry:"1740754286" modified:"1740772814" priority:"H" project:"college.EM" status:"pending" tags:"EM,exercises" tags_EM:"x" tags_exercises:"x" uuid:"96ea8c6e-fe4e-442d-848a-71757ddb4e26" xp:"30"]
+---
+time 1740772814
+old [description:"write the report (methods, q1, q2, conclusion, abstract, resultsQ1, resultsQ2, discQ1, discQ2, errQ1, errQ2, visuals)" due:"1741179600" entry:"1740754414" modified:"1740754753" priority:"H" project:"college" status:"pending" tags:"EM,lab,report" tags_EM:"x" tags_lab:"x" tags_report:"x" uuid:"3f26f672-c6c8-42ff-aeec-0fdec3ebd4b2" xp:"40"]
+new [description:"write the report (methods, q1, q2, conclusion, abstract, resultsQ1, resultsQ2, discQ1, discQ2, errQ1, errQ2, visuals)" due:"1741179600" entry:"1740754414" modified:"1740772814" priority:"H" project:"college.EM" status:"pending" tags:"EM,lab,report" tags_EM:"x" tags_lab:"x" tags_report:"x" uuid:"3f26f672-c6c8-42ff-aeec-0fdec3ebd4b2" xp:"40"]
+---
+time 1740772848
+old [description:"write the report for the LPM lab with Lucas" due:"1740956340" entry:"1740754542" modified:"1740754733" priority:"H" project:"college" status:"pending" tags:"DSA,lab,report" tags_DSA:"x" tags_lab:"x" tags_report:"x" uuid:"c1c5d33c-af5a-43fd-9b9f-e999ef08a7a7" xp:"40"]
+new [description:"write the report for the LPM lab with Lucas" due:"1740956340" entry:"1740754542" modified:"1740772848" priority:"H" project:"college.DSA" status:"pending" tags:"DSA,lab,report" tags_DSA:"x" tags_lab:"x" tags_report:"x" uuid:"c1c5d33c-af5a-43fd-9b9f-e999ef08a7a7" xp:"40"]
+---
+time 1740772848
+old [description:"finish part 1 lpm" due:"1740956340" entry:"1740754566" modified:"1740754740" priority:"H" project:"college" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"56d328a6-30a1-457d-a0f1-a02b455a78cf" xp:"50"]
+new [description:"finish part 1 lpm" due:"1740956340" entry:"1740754566" modified:"1740772848" priority:"H" project:"college.DSA" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"56d328a6-30a1-457d-a0f1-a02b455a78cf" xp:"50"]
+---
+time 1740772848
+old [description:"finish part 2 lpm" due:"1740956340" entry:"1740754570" modified:"1740754744" priority:"H" project:"college" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"b27d5caa-dfb9-489a-9542-690dbb71cb0e" xp:"50"]
+new [description:"finish part 2 lpm" due:"1740956340" entry:"1740754570" modified:"1740772848" priority:"H" project:"college.DSA" status:"pending" tags:"DSA,code,lab" tags_DSA:"x" tags_code:"x" tags_lab:"x" uuid:"b27d5caa-dfb9-489a-9542-690dbb71cb0e" xp:"50"]
+---
+time 1740772848
+old [description:"upload lpm report on github from overleaf" entry:"1740754595" modified:"1740754766" priority:"L" project:"college" status:"pending" tags:"DSA,org" tags_DSA:"x" tags_org:"x" uuid:"6c6c772b-8cfb-4e89-8986-b4c15d778df1" xp:"1"]
+new [description:"upload lpm report on github from overleaf" entry:"1740754595" modified:"1740772848" priority:"L" project:"college.DSA" status:"pending" tags:"DSA,org" tags_DSA:"x" tags_org:"x" uuid:"6c6c772b-8cfb-4e89-8986-b4c15d778df1" xp:"1"]
+---
+time 1740773250
+old [description:"configure taskwarrior (+read docs)" due:"1740870000" entry:"1740755060" modified:"1740755060" priority:"M" project:"glowup" status:"pending" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"f7c397a4-3143-4d66-908e-fde1ede057a1" xp:"5"]
+new [description:"configure taskwarrior (+read docs)" due:"1740870000" end:"1740773250" entry:"1740755060" modified:"1740773250" priority:"M" project:"glowup" status:"completed" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"f7c397a4-3143-4d66-908e-fde1ede057a1" xp:"5"]
+---
+time 1740773278
+old [description:"create the gym\/run tracking system" due:"1741302000" entry:"1740755151" modified:"1740755151" priority:"M" project:"glowup" status:"pending" tags:"health,research" tags_health:"x" tags_research:"x" uuid:"5d9e0f93-f991-45ca-8753-62d5113b3efd" xp:"10"]
+new [description:"create the gym\/run tracking system" due:"1741302000" end:"1740773278" entry:"1740755151" modified:"1740773278" priority:"M" project:"glowup" status:"completed" tags:"health,research" tags_health:"x" tags_research:"x" uuid:"5d9e0f93-f991-45ca-8753-62d5113b3efd" xp:"10"]
+---
+time 1740773382
+old [description:"Upload linalg hw2 on github" due:"1740697200" entry:"1740754089" modified:"1740754761" priority:"L" project:"college" status:"pending" uuid:"0e9f962b-12a5-4e94-86c5-1f29d192e626" xp:"1"]
+new [description:"Upload linalg hw2 on github" due:"1740697200" end:"1740773382" entry:"1740754089" modified:"1740773382" priority:"L" project:"college" status:"completed" uuid:"0e9f962b-12a5-4e94-86c5-1f29d192e626" xp:"1"]
+---
+time 1740773382
+old [description:"submit capacitors lab on github" entry:"1740754442" modified:"1740754772" priority:"L" project:"college" status:"pending" tags:"org" tags_org:"x" uuid:"cc112f9f-658b-4c70-a63e-59dc55998094" xp:"1"]
+new [description:"submit capacitors lab on github" end:"1740773382" entry:"1740754442" modified:"1740773382" priority:"L" project:"college" status:"completed" tags:"org" tags_org:"x" uuid:"cc112f9f-658b-4c70-a63e-59dc55998094" xp:"1"]
+---
+time 1740774267
+old [description:"why i need relative numbers + goto-line" entry:"1740763759" modified:"1740763759" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"8d173f96-b99c-41a4-898a-4f3e5e0a9204"]
+new [description:"why i need relative numbers + goto-line" end:"1740774267" entry:"1740763759" modified:"1740774267" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"8d173f96-b99c-41a4-898a-4f3e5e0a9204"]
+---
+time 1740774306
+old [description:"fix rc\/ rexim stuff" entry:"1740763743" modified:"1740763743" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"83a16d8c-3650-42ad-8a1e-4a16101fdea8"]
+new [description:"fix rc\/ rexim stuff" end:"1740774306" entry:"1740763743" modified:"1740774306" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"83a16d8c-3650-42ad-8a1e-4a16101fdea8"]
+---
+time 1740778101
+old [description:"setup the nerd font (no fancy icons)" entry:"1740763712" modified:"1740763712" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"092e9ade-eb1b-452d-b05c-58ff2e1b44bd"]
+new [description:"setup the nerd font (no fancy icons)" end:"1740778098" entry:"1740763712" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"092e9ade-eb1b-452d-b05c-58ff2e1b44bd"]
+---
+time 1740778101
+old [description:"multiple-cursors" entry:"1740763793" modified:"1740763793" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5adbed7e-0a19-483a-9967-345c78192a39" xp:"5"]
+new [description:"multiple-cursors" end:"1740778101" entry:"1740763793" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5adbed7e-0a19-483a-9967-345c78192a39" xp:"5"]
+---
+time 1740778101
+old [description:"company" entry:"1740763798" modified:"1740763798" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ed16535f-4710-4e49-b51d-10ac887c313d" xp:"5"]
+new [description:"company" end:"1740778101" entry:"1740763798" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ed16535f-4710-4e49-b51d-10ac887c313d" xp:"5"]
+---
+time 1740778101
+old [description:"projectile" entry:"1740763804" modified:"1740763804" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b5578142-da3b-41b7-8d80-030910b9ee6a" xp:"5"]
+new [description:"projectile" end:"1740778101" entry:"1740763804" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b5578142-da3b-41b7-8d80-030910b9ee6a" xp:"5"]
+---
+time 1740778101
+old [description:"improve compilation buffer" entry:"1740763814" modified:"1740763814" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4a8d276c-6846-487e-ad23-e778ecc164e5" xp:"5"]
+new [description:"improve compilation buffer" end:"1740778101" entry:"1740763814" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4a8d276c-6846-487e-ad23-e778ecc164e5" xp:"5"]
+---
+time 1740780030
+old [description:"origami" entry:"1740763868" modified:"1740763868" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"563b86f8-1f34-4594-a0ea-9566068ea48c" xp:"5"]
+new [description:"origami" end:"1740780029" entry:"1740763868" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"563b86f8-1f34-4594-a0ea-9566068ea48c" xp:"5"]
+---
+time 1740780030
+old [description:"beacon" entry:"1740763897" modified:"1740763897" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"bb184ce1-3e87-458f-bbcc-58a1b2ff2f0a" xp:"5"]
+new [description:"beacon" end:"1740780030" entry:"1740763897" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"bb184ce1-3e87-458f-bbcc-58a1b2ff2f0a" xp:"5"]
+---
+time 1740780030
+old [description:"sideline" entry:"1740763901" modified:"1740763901" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"49afd0ec-13ee-4b01-bcc0-556acaad8e2d" xp:"5"]
+new [description:"sideline" end:"1740780030" entry:"1740763901" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"49afd0ec-13ee-4b01-bcc0-556acaad8e2d" xp:"5"]
+---
+time 1740780030
+old [description:"winner-mode or zoom" entry:"1740763909" modified:"1740763909" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"96d3c8a6-6d05-4843-9da4-1aae77f508c3" xp:"5"]
+new [description:"winner-mode or zoom" end:"1740780030" entry:"1740763909" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"96d3c8a6-6d05-4843-9da4-1aae77f508c3" xp:"5"]
+---
+time 1740780030
+old [description:"goto-line" entry:"1740763915" modified:"1740763915" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31914400-2a05-4ecb-b71e-afdb244d70e8" xp:"5"]
+new [description:"goto-line" end:"1740780030" entry:"1740763915" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31914400-2a05-4ecb-b71e-afdb244d70e8" xp:"5"]
+---
+time 1740780030
+old [description:"blink-search" entry:"1740763922" modified:"1740763922" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4df6ded6-8afa-49b4-8ff2-e876d558bfd4" xp:"5"]
+new [description:"blink-search" end:"1740780030" entry:"1740763922" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4df6ded6-8afa-49b4-8ff2-e876d558bfd4" xp:"5"]
+---
+time 1740780030
+old [description:"awesome-tray" entry:"1740763928" modified:"1740763928" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5bd11bbb-c413-494c-bb7e-ef7ac3d364cf" xp:"5"]
+new [description:"awesome-tray" end:"1740780030" entry:"1740763928" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5bd11bbb-c413-494c-bb7e-ef7ac3d364cf" xp:"5"]
+---
+time 1740780030
+old [description:"dimmer.el" entry:"1740763935" modified:"1740763935" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"283eb2bb-bc9a-4190-8cc3-a41002e819e6" xp:"5"]
+new [description:"dimmer.el" end:"1740780030" entry:"1740763935" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"283eb2bb-bc9a-4190-8cc3-a41002e819e6" xp:"5"]
+---
+time 1740780030
+old [description:"indent-guide" entry:"1740763942" modified:"1740763942" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ac45fd07-e900-4e72-89ff-5c62567c7533" xp:"5"]
+new [description:"indent-guide" end:"1740780030" entry:"1740763942" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ac45fd07-e900-4e72-89ff-5c62567c7533" xp:"5"]
+---
+time 1740780030
+old [description:"electric-minor-mode" entry:"1740763949" modified:"1740763949" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"81f2ddd6-aaa1-48eb-b7af-c3a602dbd83c" xp:"5"]
+new [description:"electric-minor-mode" end:"1740780030" entry:"1740763949" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"81f2ddd6-aaa1-48eb-b7af-c3a602dbd83c" xp:"5"]
+---
+time 1740780030
+old [description:"electric-minor-mode" entry:"1740763951" modified:"1740763951" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"e070112e-2fc5-47f0-b521-e7d53c81d1af" xp:"5"]
+new [description:"electric-minor-mode" end:"1740780030" entry:"1740763951" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"e070112e-2fc5-47f0-b521-e7d53c81d1af" xp:"5"]
+---
+time 1740780030
+old [description:"undo-tree" entry:"1740763963" modified:"1740763963" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31c2b473-2c4a-445e-b8e0-e0a17be8cfe9" xp:"5"]
+new [description:"undo-tree" end:"1740780030" entry:"1740763963" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31c2b473-2c4a-445e-b8e0-e0a17be8cfe9" xp:"5"]
+---
+time 1740784608
+old [description:"flycheck" entry:"1740763983" modified:"1740763983" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"de11bdbb-5073-4196-ba49-b8fd97ef716d" xp:"5"]
+new [description:"flycheck" end:"1740784607" entry:"1740763983" modified:"1740784608" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"de11bdbb-5073-4196-ba49-b8fd97ef716d" xp:"5"]
+---
+time 1740784608
+old [description:"which-key" entry:"1740764050" modified:"1740764050" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b84a0350-bf05-44ad-98da-c8429b722693" xp:"5"]
+new [description:"which-key" end:"1740784608" entry:"1740764050" modified:"1740784608" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b84a0350-bf05-44ad-98da-c8429b722693" xp:"5"]
+---
+time 1740784608
+old [description:"cheatsheet" entry:"1740764055" modified:"1740764055" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"1c9c9374-4a7d-4681-962a-31044ff98238" xp:"5"]
+new [description:"cheatsheet" end:"1740784608" entry:"1740764055" modified:"1740784608" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"1c9c9374-4a7d-4681-962a-31044ff98238" xp:"5"]
+---
+time 1740784608
+old [description:"parrot" entry:"1740764069" modified:"1740764069" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"35a03962-2c61-444d-ba51-d1dffda50f02" xp:"5"]
+new [description:"parrot" end:"1740784608" entry:"1740764069" modified:"1740784608" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"35a03962-2c61-444d-ba51-d1dffda50f02" xp:"5"]
+---
+time 1740786228
+old [description:"emacs-dashboard\/englight" entry:"1740763878" modified:"1740763878" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"721565bd-40a4-4e31-b4a0-ac1ebf8558f4" xp:"5"]
+new [description:"emacs-dashboard\/englight" end:"1740786226" entry:"1740763878" modified:"1740786228" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"721565bd-40a4-4e31-b4a0-ac1ebf8558f4" xp:"5"]
+---
+time 1740786228
+old [description:"workgroups 2\/desktop" entry:"1740763887" modified:"1740763887" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b7ca948c-673e-427c-a8c3-60ea68cf5976" xp:"5"]
+new [description:"workgroups 2\/desktop" end:"1740786228" entry:"1740763887" modified:"1740786228" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b7ca948c-673e-427c-a8c3-60ea68cf5976" xp:"5"]
+---
+time 1740786228
+old [description:"yasnippets" entry:"1740763969" modified:"1740763969" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"908a6003-b873-4ffc-8b31-e30d2e9336cf" xp:"5"]
+new [description:"yasnippets" end:"1740786228" entry:"1740763969" modified:"1740786228" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"908a6003-b873-4ffc-8b31-e30d2e9336cf" xp:"5"]
+---
+time 1740786526
+old [description:"helm" entry:"1740763840" modified:"1740763840" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b279ac81-c9fc-4a99-a1dd-fd5d2e85f2d5" xp:"5"]
+new [description:"helm" end:"1740786526" entry:"1740763840" modified:"1740786526" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b279ac81-c9fc-4a99-a1dd-fd5d2e85f2d5" xp:"5"]
+---
+time 1740789529
+old [description:"setup lsp for c\/c++ and python + cc-mode, clang-format, ebrowse, elpy, makefile-mode, helm-make" entry:"1740763860" modified:"1740764023" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2926388f-cb0a-4b17-abf2-8005c32ad0f8" xp:"5"]
+new [description:"setup lsp for c\/c++ and python + cc-mode, clang-format, ebrowse, elpy, makefile-mode, helm-make" end:"1740789529" entry:"1740763860" modified:"1740789529" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2926388f-cb0a-4b17-abf2-8005c32ad0f8" xp:"5"]
+---
+time 1740789529
+old [description:"setup jump to definition" entry:"1740763978" modified:"1740763978" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2c308402-7b43-40dd-9812-81bdc9c5ce1d" xp:"5"]
+new [description:"setup jump to definition" end:"1740789529" entry:"1740763978" modified:"1740789529" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2c308402-7b43-40dd-9812-81bdc9c5ce1d" xp:"5"]
+---
+time 1740789538
+old [description:"markdown-mode" entry:"1740764065" modified:"1740764065" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"12a00e0a-c75f-403d-9d3b-f5128a22c620" xp:"5"]
+new [description:"markdown-mode" end:"1740789538" entry:"1740764065" modified:"1740789538" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"12a00e0a-c75f-403d-9d3b-f5128a22c620" xp:"5"]
+---
+time 1740790098
+old [description:"setup printer and print shit for katy" entry:"1740765999" modified:"1740765999" project:"personal" status:"pending" uuid:"01f1a1c9-1cf7-408d-9b16-7742472d51ab"]
+new [description:"setup printer and print shit for katy" due:"1740870000" entry:"1740765999" modified:"1740790098" project:"personal" status:"pending" uuid:"01f1a1c9-1cf7-408d-9b16-7742472d51ab"]
+---
+time 1740790123
+old [description:"setup an initial nutrition diet" due:"1741302000" entry:"1740755120" modified:"1740755120" priority:"M" project:"glowup" status:"pending" tags:"health,reading,research" tags_health:"x" tags_reading:"x" tags_research:"x" uuid:"b19d336e-65f5-47f4-bdb1-6161fa0ab8db" xp:"40"]
+new [description:"setup an initial nutrition diet" due:"1741302000" entry:"1740755120" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"health,reading,research" tags_health:"x" tags_reading:"x" tags_research:"x" uuid:"b19d336e-65f5-47f4-bdb1-6161fa0ab8db" xp:"40"]
+---
+time 1740790123
+old [description:"setup minimal i3wm setup and study the main keybindings" entry:"1740763680" modified:"1740763680" priority:"H" project:"glowup" status:"pending" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"294bc5d0-0ba0-4b81-a230-589f508bcdfc"]
+new [description:"setup minimal i3wm setup and study the main keybindings" entry:"1740763680" modified:"1740790123" priority:"H" project:"personal" status:"pending" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"294bc5d0-0ba0-4b81-a230-589f508bcdfc"]
+---
+time 1740790123
+old [description:"setup & study environment for LaTeX" entry:"1740763830" modified:"1740763830" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"cc5f6407-74fb-43b0-8b7a-bd9b3f79ea59" xp:"5"]
+new [description:"setup & study environment for LaTeX" entry:"1740763830" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"cc5f6407-74fb-43b0-8b7a-bd9b3f79ea59" xp:"5"]
+---
+time 1740790123
+old [description:"magit" entry:"1740763844" modified:"1740763844" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a6779f38-0198-4d3d-b293-f30effefacba" xp:"5"]
+new [description:"magit" entry:"1740763844" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a6779f38-0198-4d3d-b293-f30effefacba" xp:"5"]
+---
+time 1740790123
+old [description:"eshell" entry:"1740764061" modified:"1740764061" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"872d41a5-d3e1-4bb1-8f41-6e3ce6f098e4" xp:"5"]
+new [description:"eshell" entry:"1740764061" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"872d41a5-d3e1-4bb1-8f41-6e3ce6f098e4" xp:"5"]
+---
+time 1740790123
+old [description:"Dired" entry:"1740764073" modified:"1740764073" priority:"M" project:"glowup" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a005d323-64ad-4e55-968b-c225b73987c1" xp:"5"]
+new [description:"Dired" entry:"1740764073" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a005d323-64ad-4e55-968b-c225b73987c1" xp:"5"]
+---
+time 1740790123
+old [description:"transfer from Spotify" entry:"1740764090" modified:"1740764090" priority:"H" project:"glowup" status:"pending" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"1ae3e498-6eae-47b1-8404-4f369f8fd08b"]
+new [description:"transfer from Spotify" entry:"1740764090" modified:"1740790123" priority:"H" project:"personal" status:"pending" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"1ae3e498-6eae-47b1-8404-4f369f8fd08b"]
+---
+time 1740790123
+old [description:"setup phone to use all the organiztion tools i come up with so far" entry:"1740764112" modified:"1740764112" priority:"M" project:"glowup" status:"pending" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"80def761-7064-4862-ac79-dd1e27e86ad6"]
+new [description:"setup phone to use all the organiztion tools i come up with so far" entry:"1740764112" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"80def761-7064-4862-ac79-dd1e27e86ad6"]
+---
+time 1740790123
+old [description:"markdown-mode" end:"1740789538" entry:"1740764065" modified:"1740789538" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"12a00e0a-c75f-403d-9d3b-f5128a22c620" xp:"5"]
+new [description:"markdown-mode" end:"1740789538" entry:"1740764065" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"12a00e0a-c75f-403d-9d3b-f5128a22c620" xp:"5"]
+---
+time 1740790123
+old [description:"setup lsp for c\/c++ and python + cc-mode, clang-format, ebrowse, elpy, makefile-mode, helm-make" end:"1740789529" entry:"1740763860" modified:"1740789529" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2926388f-cb0a-4b17-abf2-8005c32ad0f8" xp:"5"]
+new [description:"setup lsp for c\/c++ and python + cc-mode, clang-format, ebrowse, elpy, makefile-mode, helm-make" end:"1740789529" entry:"1740763860" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2926388f-cb0a-4b17-abf2-8005c32ad0f8" xp:"5"]
+---
+time 1740790123
+old [description:"setup jump to definition" end:"1740789529" entry:"1740763978" modified:"1740789529" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2c308402-7b43-40dd-9812-81bdc9c5ce1d" xp:"5"]
+new [description:"setup jump to definition" end:"1740789529" entry:"1740763978" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"2c308402-7b43-40dd-9812-81bdc9c5ce1d" xp:"5"]
+---
+time 1740790123
+old [description:"helm" end:"1740786526" entry:"1740763840" modified:"1740786526" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b279ac81-c9fc-4a99-a1dd-fd5d2e85f2d5" xp:"5"]
+new [description:"helm" end:"1740786526" entry:"1740763840" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b279ac81-c9fc-4a99-a1dd-fd5d2e85f2d5" xp:"5"]
+---
+time 1740790123
+old [description:"emacs-dashboard\/englight" end:"1740786226" entry:"1740763878" modified:"1740786228" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"721565bd-40a4-4e31-b4a0-ac1ebf8558f4" xp:"5"]
+new [description:"emacs-dashboard\/englight" end:"1740786226" entry:"1740763878" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"721565bd-40a4-4e31-b4a0-ac1ebf8558f4" xp:"5"]
+---
+time 1740790123
+old [description:"workgroups 2\/desktop" end:"1740786228" entry:"1740763887" modified:"1740786228" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b7ca948c-673e-427c-a8c3-60ea68cf5976" xp:"5"]
+new [description:"workgroups 2\/desktop" end:"1740786228" entry:"1740763887" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b7ca948c-673e-427c-a8c3-60ea68cf5976" xp:"5"]
+---
+time 1740790123
+old [description:"yasnippets" end:"1740786228" entry:"1740763969" modified:"1740786228" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"908a6003-b873-4ffc-8b31-e30d2e9336cf" xp:"5"]
+new [description:"yasnippets" end:"1740786228" entry:"1740763969" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"908a6003-b873-4ffc-8b31-e30d2e9336cf" xp:"5"]
+---
+time 1740790123
+old [description:"flycheck" end:"1740784607" entry:"1740763983" modified:"1740784608" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"de11bdbb-5073-4196-ba49-b8fd97ef716d" xp:"5"]
+new [description:"flycheck" end:"1740784607" entry:"1740763983" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"de11bdbb-5073-4196-ba49-b8fd97ef716d" xp:"5"]
+---
+time 1740790123
+old [description:"which-key" end:"1740784608" entry:"1740764050" modified:"1740784608" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b84a0350-bf05-44ad-98da-c8429b722693" xp:"5"]
+new [description:"which-key" end:"1740784608" entry:"1740764050" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b84a0350-bf05-44ad-98da-c8429b722693" xp:"5"]
+---
+time 1740790123
+old [description:"cheatsheet" end:"1740784608" entry:"1740764055" modified:"1740784608" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"1c9c9374-4a7d-4681-962a-31044ff98238" xp:"5"]
+new [description:"cheatsheet" end:"1740784608" entry:"1740764055" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"1c9c9374-4a7d-4681-962a-31044ff98238" xp:"5"]
+---
+time 1740790123
+old [description:"parrot" end:"1740784608" entry:"1740764069" modified:"1740784608" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"35a03962-2c61-444d-ba51-d1dffda50f02" xp:"5"]
+new [description:"parrot" end:"1740784608" entry:"1740764069" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"35a03962-2c61-444d-ba51-d1dffda50f02" xp:"5"]
+---
+time 1740790123
+old [description:"origami" end:"1740780029" entry:"1740763868" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"563b86f8-1f34-4594-a0ea-9566068ea48c" xp:"5"]
+new [description:"origami" end:"1740780029" entry:"1740763868" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"563b86f8-1f34-4594-a0ea-9566068ea48c" xp:"5"]
+---
+time 1740790123
+old [description:"beacon" end:"1740780030" entry:"1740763897" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"bb184ce1-3e87-458f-bbcc-58a1b2ff2f0a" xp:"5"]
+new [description:"beacon" end:"1740780030" entry:"1740763897" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"bb184ce1-3e87-458f-bbcc-58a1b2ff2f0a" xp:"5"]
+---
+time 1740790123
+old [description:"sideline" end:"1740780030" entry:"1740763901" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"49afd0ec-13ee-4b01-bcc0-556acaad8e2d" xp:"5"]
+new [description:"sideline" end:"1740780030" entry:"1740763901" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"49afd0ec-13ee-4b01-bcc0-556acaad8e2d" xp:"5"]
+---
+time 1740790123
+old [description:"winner-mode or zoom" end:"1740780030" entry:"1740763909" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"96d3c8a6-6d05-4843-9da4-1aae77f508c3" xp:"5"]
+new [description:"winner-mode or zoom" end:"1740780030" entry:"1740763909" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"96d3c8a6-6d05-4843-9da4-1aae77f508c3" xp:"5"]
+---
+time 1740790123
+old [description:"goto-line" end:"1740780030" entry:"1740763915" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31914400-2a05-4ecb-b71e-afdb244d70e8" xp:"5"]
+new [description:"goto-line" end:"1740780030" entry:"1740763915" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31914400-2a05-4ecb-b71e-afdb244d70e8" xp:"5"]
+---
+time 1740790123
+old [description:"blink-search" end:"1740780030" entry:"1740763922" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4df6ded6-8afa-49b4-8ff2-e876d558bfd4" xp:"5"]
+new [description:"blink-search" end:"1740780030" entry:"1740763922" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4df6ded6-8afa-49b4-8ff2-e876d558bfd4" xp:"5"]
+---
+time 1740790123
+old [description:"awesome-tray" end:"1740780030" entry:"1740763928" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5bd11bbb-c413-494c-bb7e-ef7ac3d364cf" xp:"5"]
+new [description:"awesome-tray" end:"1740780030" entry:"1740763928" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5bd11bbb-c413-494c-bb7e-ef7ac3d364cf" xp:"5"]
+---
+time 1740790123
+old [description:"dimmer.el" end:"1740780030" entry:"1740763935" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"283eb2bb-bc9a-4190-8cc3-a41002e819e6" xp:"5"]
+new [description:"dimmer.el" end:"1740780030" entry:"1740763935" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"283eb2bb-bc9a-4190-8cc3-a41002e819e6" xp:"5"]
+---
+time 1740790123
+old [description:"indent-guide" end:"1740780030" entry:"1740763942" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ac45fd07-e900-4e72-89ff-5c62567c7533" xp:"5"]
+new [description:"indent-guide" end:"1740780030" entry:"1740763942" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ac45fd07-e900-4e72-89ff-5c62567c7533" xp:"5"]
+---
+time 1740790123
+old [description:"electric-minor-mode" end:"1740780030" entry:"1740763949" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"81f2ddd6-aaa1-48eb-b7af-c3a602dbd83c" xp:"5"]
+new [description:"electric-minor-mode" end:"1740780030" entry:"1740763949" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"81f2ddd6-aaa1-48eb-b7af-c3a602dbd83c" xp:"5"]
+---
+time 1740790123
+old [description:"electric-minor-mode" end:"1740780030" entry:"1740763951" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"e070112e-2fc5-47f0-b521-e7d53c81d1af" xp:"5"]
+new [description:"electric-minor-mode" end:"1740780030" entry:"1740763951" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"e070112e-2fc5-47f0-b521-e7d53c81d1af" xp:"5"]
+---
+time 1740790123
+old [description:"undo-tree" end:"1740780030" entry:"1740763963" modified:"1740780030" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31c2b473-2c4a-445e-b8e0-e0a17be8cfe9" xp:"5"]
+new [description:"undo-tree" end:"1740780030" entry:"1740763963" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"31c2b473-2c4a-445e-b8e0-e0a17be8cfe9" xp:"5"]
+---
+time 1740790123
+old [description:"setup the nerd font (no fancy icons)" end:"1740778098" entry:"1740763712" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"092e9ade-eb1b-452d-b05c-58ff2e1b44bd"]
+new [description:"setup the nerd font (no fancy icons)" end:"1740778098" entry:"1740763712" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"092e9ade-eb1b-452d-b05c-58ff2e1b44bd"]
+---
+time 1740790123
+old [description:"multiple-cursors" end:"1740778101" entry:"1740763793" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5adbed7e-0a19-483a-9967-345c78192a39" xp:"5"]
+new [description:"multiple-cursors" end:"1740778101" entry:"1740763793" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"5adbed7e-0a19-483a-9967-345c78192a39" xp:"5"]
+---
+time 1740790123
+old [description:"company" end:"1740778101" entry:"1740763798" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ed16535f-4710-4e49-b51d-10ac887c313d" xp:"5"]
+new [description:"company" end:"1740778101" entry:"1740763798" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"ed16535f-4710-4e49-b51d-10ac887c313d" xp:"5"]
+---
+time 1740790123
+old [description:"projectile" end:"1740778101" entry:"1740763804" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b5578142-da3b-41b7-8d80-030910b9ee6a" xp:"5"]
+new [description:"projectile" end:"1740778101" entry:"1740763804" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"b5578142-da3b-41b7-8d80-030910b9ee6a" xp:"5"]
+---
+time 1740790123
+old [description:"improve compilation buffer" end:"1740778101" entry:"1740763814" modified:"1740778101" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4a8d276c-6846-487e-ad23-e778ecc164e5" xp:"5"]
+new [description:"improve compilation buffer" end:"1740778101" entry:"1740763814" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"4a8d276c-6846-487e-ad23-e778ecc164e5" xp:"5"]
+---
+time 1740790123
+old [description:"fix rc\/ rexim stuff" end:"1740774306" entry:"1740763743" modified:"1740774306" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"83a16d8c-3650-42ad-8a1e-4a16101fdea8"]
+new [description:"fix rc\/ rexim stuff" end:"1740774306" entry:"1740763743" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"83a16d8c-3650-42ad-8a1e-4a16101fdea8"]
+---
+time 1740790123
+old [description:"why i need relative numbers + goto-line" end:"1740774267" entry:"1740763759" modified:"1740774267" priority:"M" project:"glowup" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"8d173f96-b99c-41a4-898a-4f3e5e0a9204"]
+new [description:"why i need relative numbers + goto-line" end:"1740774267" entry:"1740763759" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"8d173f96-b99c-41a4-898a-4f3e5e0a9204"]
+---
+time 1740790123
+old [description:"create the gym\/run tracking system" due:"1741302000" end:"1740773278" entry:"1740755151" modified:"1740773278" priority:"M" project:"glowup" status:"completed" tags:"health,research" tags_health:"x" tags_research:"x" uuid:"5d9e0f93-f991-45ca-8753-62d5113b3efd" xp:"10"]
+new [description:"create the gym\/run tracking system" due:"1741302000" end:"1740773278" entry:"1740755151" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"health,research" tags_health:"x" tags_research:"x" uuid:"5d9e0f93-f991-45ca-8753-62d5113b3efd" xp:"10"]
+---
+time 1740790123
+old [description:"configure taskwarrior (+read docs)" due:"1740870000" end:"1740773250" entry:"1740755060" modified:"1740773250" priority:"M" project:"glowup" status:"completed" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"f7c397a4-3143-4d66-908e-fde1ede057a1" xp:"5"]
+new [description:"configure taskwarrior (+read docs)" due:"1740870000" end:"1740773250" entry:"1740755060" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"f7c397a4-3143-4d66-908e-fde1ede057a1" xp:"5"]
+---
+time 1740790123
+old [description:"configure calcurse (+read docs)" due:"1740870000" end:"1740772743" entry:"1740755069" modified:"1740772743" priority:"M" project:"glowup" status:"completed" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"ddc2c1c6-48d2-4aee-b852-faf32889f391" xp:"5"]
+new [description:"configure calcurse (+read docs)" due:"1740870000" end:"1740772743" entry:"1740755069" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"org,reading" tags_org:"x" tags_reading:"x" uuid:"ddc2c1c6-48d2-4aee-b852-faf32889f391" xp:"5"]
+---
+time 1740790123
+old [description:"setup beautiful terminal" end:"1740769373" entry:"1740763659" modified:"1740769373" priority:"M" project:"glowup" status:"completed" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"fe0e16f8-0ca7-4a54-9f7b-ec047f0dec63"]
+new [description:"setup beautiful terminal" end:"1740769373" entry:"1740763659" modified:"1740790123" priority:"M" project:"personal" status:"completed" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"fe0e16f8-0ca7-4a54-9f7b-ec047f0dec63"]
+---
+time 1740790123
+old [description:"running and stretching" due:"1740862800" end:"1740766134" entry:"1740755218" modified:"1740766135" priority:"H" project:"glowup" status:"deleted" tags:"habit" tags_habit:"x" uuid:"7190ec53-d1cf-4406-bd3f-b4f62a17b43d" xp:"15"]
+new [description:"running and stretching" due:"1740862800" end:"1740766134" entry:"1740755218" modified:"1740790123" priority:"H" project:"personal" status:"deleted" tags:"habit" tags_habit:"x" uuid:"7190ec53-d1cf-4406-bd3f-b4f62a17b43d" xp:"15"]
+---
+time 1740790123
+old [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" end:"1740766118" entry:"1740754896" mask:"X" modified:"1740766118" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+new [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" end:"1740766118" entry:"1740754896" mask:"X" modified:"1740790123" project:"personal" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"95d65828-3249-4f3a-8f8e-35448a051bc0"]
+---
+time 1740790123
+old [description:"nutrition good for day" due:"1740862800" end:"1740766119" entry:"1740754984" mask:"X" modified:"1740766119" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+new [description:"nutrition good for day" due:"1740862800" end:"1740766119" entry:"1740754984" mask:"X" modified:"1740790123" project:"personal" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed"]
+---
+time 1740790123
+old [description:"well-being and off the computer" due:"1740862800" end:"1740766119" entry:"1740755005" mask:"X" modified:"1740766119" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+new [description:"well-being and off the computer" due:"1740862800" end:"1740766119" entry:"1740755005" mask:"X" modified:"1740790123" project:"personal" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"be19f0cc-4c65-4c9b-b60c-0111403c1613"]
+---
+time 1740790123
+old [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" end:"1740766114" entry:"1740755013" imask:"0" modified:"1740766117" parent:"95d65828-3249-4f3a-8f8e-35448a051bc0" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"4781a118-472d-4e8b-98dc-414da7fdace0"]
+new [description:"sleep by 11PM and wake up at 7AM" due:"1740812400" end:"1740766114" entry:"1740755013" imask:"0" modified:"1740790123" parent:"95d65828-3249-4f3a-8f8e-35448a051bc0" project:"personal" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"4781a118-472d-4e8b-98dc-414da7fdace0"]
+---
+time 1740790128
+old [description:"nutrition good for day" due:"1740862800" end:"1740766118" entry:"1740755013" imask:"0" modified:"1740766118" parent:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"a6496526-7315-4e48-8416-d27f805194e7"]
+new [description:"nutrition good for day" due:"1740862800" end:"1740766118" entry:"1740755013" imask:"0" modified:"1740790128" parent:"8a2b4d7e-9fa3-47e4-9b8c-6f3e90235bed" project:"personal" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"a6496526-7315-4e48-8416-d27f805194e7"]
+---
+time 1740790133
+old [description:"well-being and off the computer" due:"1740862800" end:"1740766119" entry:"1740755013" imask:"0" modified:"1740766119" parent:"be19f0cc-4c65-4c9b-b60c-0111403c1613" project:"glowup" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"813ac930-2335-4241-a62e-e17b1f01830f"]
+new [description:"well-being and off the computer" due:"1740862800" end:"1740766119" entry:"1740755013" imask:"0" modified:"1740790133" parent:"be19f0cc-4c65-4c9b-b60c-0111403c1613" project:"personal" recur:"daily" rtype:"periodic" status:"deleted" tags:"habit" tags_habit:"x" uuid:"813ac930-2335-4241-a62e-e17b1f01830f"]
+---
+time 1740790295
+old [description:"setup minimal i3wm setup and study the main keybindings" entry:"1740763680" modified:"1740790123" priority:"H" project:"personal" status:"pending" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"294bc5d0-0ba0-4b81-a230-589f508bcdfc"]
+new [description:"setup minimal i3wm setup and study the main keybindings" end:"1740790291" entry:"1740763680" modified:"1740790295" priority:"H" project:"personal" status:"deleted" tags:"reading,tool" tags_reading:"x" tags_tool:"x" uuid:"294bc5d0-0ba0-4b81-a230-589f508bcdfc"]
+---
+time 1740790295
+old [description:"setup & study environment for LaTeX" entry:"1740763830" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"cc5f6407-74fb-43b0-8b7a-bd9b3f79ea59" xp:"5"]
+new [description:"setup & study environment for LaTeX" end:"1740790295" entry:"1740763830" modified:"1740790295" priority:"M" project:"personal" status:"deleted" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"cc5f6407-74fb-43b0-8b7a-bd9b3f79ea59" xp:"5"]
+---
+time 1740790295
+old [description:"magit" entry:"1740763844" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a6779f38-0198-4d3d-b293-f30effefacba" xp:"5"]
+new [description:"magit" end:"1740790295" entry:"1740763844" modified:"1740790295" priority:"M" project:"personal" status:"deleted" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a6779f38-0198-4d3d-b293-f30effefacba" xp:"5"]
+---
+time 1740790295
+old [description:"eshell" entry:"1740764061" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"872d41a5-d3e1-4bb1-8f41-6e3ce6f098e4" xp:"5"]
+new [description:"eshell" end:"1740790295" entry:"1740764061" modified:"1740790295" priority:"M" project:"personal" status:"deleted" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"872d41a5-d3e1-4bb1-8f41-6e3ce6f098e4" xp:"5"]
+---
+time 1740790295
+old [description:"Dired" entry:"1740764073" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a005d323-64ad-4e55-968b-c225b73987c1" xp:"5"]
+new [description:"Dired" end:"1740790295" entry:"1740764073" modified:"1740790295" priority:"M" project:"personal" status:"deleted" tags:"emacs,reading,tool" tags_emacs:"x" tags_reading:"x" tags_tool:"x" uuid:"a005d323-64ad-4e55-968b-c225b73987c1" xp:"5"]
+---
+time 1740790295
+old [description:"transfer from Spotify" entry:"1740764090" modified:"1740790123" priority:"H" project:"personal" status:"pending" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"1ae3e498-6eae-47b1-8404-4f369f8fd08b"]
+new [description:"transfer from Spotify" end:"1740790295" entry:"1740764090" modified:"1740790295" priority:"H" project:"personal" status:"deleted" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"1ae3e498-6eae-47b1-8404-4f369f8fd08b"]
+---
+time 1740790295
+old [description:"setup phone to use all the organiztion tools i come up with so far" entry:"1740764112" modified:"1740790123" priority:"M" project:"personal" status:"pending" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"80def761-7064-4862-ac79-dd1e27e86ad6"]
+new [description:"setup phone to use all the organiztion tools i come up with so far" end:"1740790295" entry:"1740764112" modified:"1740790295" priority:"M" project:"personal" status:"deleted" tags:"org,tool" tags_org:"x" tags_tool:"x" uuid:"80def761-7064-4862-ac79-dd1e27e86ad6"]
+---
+time 1740790436
+new [description:"setup Emacs LaTeX and link with Overleaf" due:"1740870000" entry:"1740790436" modified:"1740790436" priority:"L" project:"personal" status:"pending" uuid:"ccdb4010-7120-485f-820a-e369a0c6912f"]
+---
+time 1740790457
+new [description:"download terminal and setup it on the phone" due:"1740870000" entry:"1740790457" modified:"1740790457" priority:"L" project:"personal" status:"pending" uuid:"0c91d492-c0d2-45b9-81a6-316c080e50a4"]
+---
+time 1740790550
+new [description:"2 hours of car theory mf" due:"1740862800" entry:"1740790550" modified:"1740790550" priority:"M" project:"personal" recur:"1d" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"7f0baf27-ab6b-4fbf-bc50-b990c9edfc4b"]
+---
+time 1740790556
+new [description:"2 hours of car theory mf" due:"1740862800" entry:"1740790556" imask:"0" modified:"1740790550" parent:"7f0baf27-ab6b-4fbf-bc50-b990c9edfc4b" priority:"M" project:"personal" recur:"1d" rtype:"periodic" status:"pending" tags:"habit" tags_habit:"x" uuid:"095229e1-07e2-4247-a29e-2425b4dc9ccb"]
+---
+time 1740790556
+old [description:"2 hours of car theory mf" due:"1740862800" entry:"1740790550" modified:"1740790550" priority:"M" project:"personal" recur:"1d" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"7f0baf27-ab6b-4fbf-bc50-b990c9edfc4b"]
+new [description:"2 hours of car theory mf" due:"1740862800" entry:"1740790550" mask:"-" modified:"1740790556" priority:"M" project:"personal" recur:"1d" rtype:"periodic" status:"recurring" tags:"habit" tags_habit:"x" uuid:"7f0baf27-ab6b-4fbf-bc50-b990c9edfc4b"]
+---
+time 1740790580
+old [description:"visit Stadskanaal grandoptical to check eyes | or make an appointment with huisarts" due:"1740870000" entry:"1740764845" modified:"1740764845" priority:"H" project:"personal" status:"pending" uuid:"5b060fe3-de04-43fc-b153-9ecbcaafa8a4"]
+new [description:"visit Stadskanaal grandoptical to check eyes | or make an appointment with huisarts" due:"1740870000" entry:"1740764845" modified:"1740790580" priority:"H" project:"personal" status:"pending" tags:"health" tags_health:"x" uuid:"5b060fe3-de04-43fc-b153-9ecbcaafa8a4"]
+---
+time 1740790580
+old [description:"read about laser correction" due:"1740870000" entry:"1740764857" modified:"1740764857" priority:"H" project:"personal" status:"pending" uuid:"4ed37ff7-c751-421e-b408-dd9ce21716fd"]
+new [description:"read about laser correction" due:"1740870000" entry:"1740764857" modified:"1740790580" priority:"H" project:"personal" status:"pending" tags:"health" tags_health:"x" uuid:"4ed37ff7-c751-421e-b408-dd9ce21716fd"]
+---
+time 1740790605
+old [description:"RDW get the driving thing back" due:"1740870000" entry:"1740764880" modified:"1740764880" priority:"H" project:"personal" status:"pending" uuid:"bf1af21b-0202-4d06-a26b-a42df3f16d18"]
+new [description:"RDW get the driving thing back" due:"1740870000" entry:"1740764880" modified:"1740790605" priority:"H" project:"personal" status:"pending" tags:"people" tags_people:"x" uuid:"bf1af21b-0202-4d06-a26b-a42df3f16d18"]
+---
+time 1740790605
+old [description:"setup printer and print shit for katy" due:"1740870000" entry:"1740765999" modified:"1740790098" project:"personal" status:"pending" uuid:"01f1a1c9-1cf7-408d-9b16-7742472d51ab"]
+new [description:"setup printer and print shit for katy" due:"1740870000" entry:"1740765999" modified:"1740790605" project:"personal" status:"pending" tags:"people" tags_people:"x" uuid:"01f1a1c9-1cf7-408d-9b16-7742472d51ab"]
+---
+time 1740790637
+new [description:"study Dired in Emacs" entry:"1740790637" modified:"1740790637" project:"later" status:"pending" uuid:"a57fc40f-9b25-47bf-b58d-c5b443c9e6ed"]
+---
+time 1740790641
+new [description:"study Magit in Emacs" entry:"1740790641" modified:"1740790641" project:"later" status:"pending" uuid:"731e71e5-1080-4202-b16b-979f42c09927"]
+---
+time 1740790664
+new [description:"study Quick Navigation\/Text-Editting in Emacs" entry:"1740790664" modified:"1740790664" project:"later" status:"pending" uuid:"149f0fc1-12da-4633-87be-e1c72e8aceb2"]
+---
+time 1740790705
+old [description:"upload lpm report on github from overleaf" entry:"1740754595" modified:"1740772848" priority:"L" project:"college.DSA" status:"pending" tags:"DSA,org" tags_DSA:"x" tags_org:"x" uuid:"6c6c772b-8cfb-4e89-8986-b4c15d778df1" xp:"1"]
+new [description:"upload lpm report on github from overleaf" end:"1740790703" entry:"1740754595" modified:"1740790705" priority:"L" project:"college.DSA" status:"deleted" tags:"DSA,org" tags_DSA:"x" tags_org:"x" uuid:"6c6c772b-8cfb-4e89-8986-b4c15d778df1" xp:"1"]
+---
+time 1740790767
+new [description:"setup i3wm" due:"1740870000" entry:"1740790767" modified:"1740790767" project:"personal" status:"pending" uuid:"1542cd40-f331-4c9e-9d13-a0574489bdd5"]
+---

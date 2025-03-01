@@ -13,22 +13,33 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
-(setq display-line-numbers-type 'relative)
-(global-display-line-numbers-mode)
+(global-set-key (kbd "C-x C-r") 'eval-buffer)
 
-(set-frame-font "JetBrains Mono" nil t)
-(set-face-attribute 'default nil :family "Monospace" :height 120)
+;; setup the Nerd Font
+(set-frame-font "FiraCode Nerd Font Mono" nil t)
+
+;; setup relative numbers and goto-line
+(rc/require 'goto-line-preview)
+(global-set-key (kbd "C-c C-a") 'goto-line-preview-relative)
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode t)
+(setq-default display-fill-column-indicator-column 120)
+(global-set-key (kbd "C-c C-s") 'display-fill-column-indicator-mode)
 
 (rc/require 'gruber-darker-theme)
 (load-theme 'gruber-darker t)
-
 (blink-cursor-mode -1)
 (setq make-backup-files nil)
 
-;;; Neon-cat
-(rc/require 'nyan-mode)
-(require 'nyan-mode)
-(nyan-mode 1)
+;; Fold-mode
+(rc/require 'origami)
+(global-set-key (kbd "C-c C-<tab>") 'origami-close-all-nodes)
+(global-set-key (kbd "C-<tab>") 'origami-toggle-node)
+(global-set-key (kbd "C-c C-r") 'origami-reset)
+
+;; Shed some light on the cursor
+(rc/require 'beacon)
+(beacon-mode 1)
 
 ;;; Multiple cursors
 (rc/require 'multiple-cursors)
@@ -39,60 +50,86 @@
 ;;; Company
 (rc/require 'company)
 (require 'company)
-(global-company-mode)
+(add-hook 'after-init-hook 'global-company-mode)
+
+;;; custom status bar
+(rc/require 'doom-modeline)
+(use-package doom-modeline
+  :ensure t
+  :config
+  (doom-modeline-mode 1))
+
+(rc/require 'nyan-mode)
+(nyan-mode)
+
+(setq doom-modeline-icon nil)
+(setq doom-modeline-major-mode-icon nil)
+(setq doom-modeline-major-mode-color-icon nil)
+(setq doom-modeline-project-name t)
+(setq doom-modeline-buffer-encoding nil)
 
 ;;; Projectile
 (rc/require 'projectile)
 (require 'projectile)
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-(setq projectile-project-search-path '("~/projects/" "~/probe/"))
-
-;;; Eglot
-(rc/require 'eglot)
-(add-hook 'c-mode-hook 'eglot-ensure)
-(add-hook 'c++-mode-hook 'eglot-ensure)
-(add-hook 'python-mode-hook 'eglot-ensure)
+(setq projectile-project-search-path '("~/projects"))
+(projectile-add-known-project "~/.dotfiles")
 
 ;;; Compilation buffer in the same window
 (add-to-list 'display-buffer-alist
              '("\\*compilation\\*"
                (display-buffer-same-window)))
+;;; Header
+(setq-default header-line-format
+  '((:eval
+     (propertize " ★ 无论空虚的，我就是我, 无论任何事情,都是我一切的基础. ★ Sexy as always ★ "
+                 'face '(:foreground "#c4c4c4" :background nil :weight bold :height 1.0 :position )))))
+(setq initial-scratch-message ";; Don't Complain!")
+(setq inhibit-splash-screen t)
 
-;;; Packages that don't require nfiguration
-(rc/require
- 'glsl-mode
- 'cmake-mode
- 'markdown-mode)
+;;; Flycheck
+(rc/require 'flycheck)
+(global-flycheck-mode)
 
-;;; LaTeX
-(rc/require 'auctex)
-(use-package latex
-  :ensure auctex
-  :hook ((LaTeX-mode . prettify-symbols-mode)))
-
-;;; CDLatex
-(rc/require 'cdlatex)
-(use-package cdlatex
-  :ensure t
-  :hook (LaTeX-mode . turn-on-cdlatex)
-  :bind (:map cdlatex-mode-map 
-              ("<tab>" . cdlatex-tab)))
-
-;;; Helm 
-(rc/require 'helm)
+;;; Helm
+(rc/require 'helm 'helm-projectile 'helm-make)
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
-(setq helm-M-x-fuzzy-match t)
 
-(when (executable-find "ack-grep")
-  (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
-        helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
-(setq helm-semantic-fuzzy-match t
-      helm-imenu-fuzzy-match    t)
+(global-set-key (kbd "C-c m") 'helm-make)
 
-;;; projectile and helm
-(rc/require 'helm-projectile)
 (require 'helm-projectile)
 (helm-projectile-on)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x p f") 'helm-projectile-find-file)
+(global-set-key (kbd "C-x p p") 'helm-projectile-switch-project)
+(global-set-key (kbd "C-x p d") 'helm-projectile-find-dir)
+(global-set-key (kbd "C-x p s") 'helm-projectile-grep)
+(global-set-key (kbd "C-x p b") 'helm-projectile-switch-to-buffer)
+
+;;; LSP
+(rc/require 'lsp-mode 'lsp-ui 'helm-lsp 'dap-mode 'ebrowse)
+(require 'lsp-mode)
+
+(use-package lsp-ui :commands lsp-ui-mode)
+(use-package helm-lsp :commands helm-lsp-workspace-symbol)
+(use-package dap-mode)
+
+(add-hook 'c-mode-hook #'lsp)
+(add-hook 'python-mode-hook #'lsp)
+(add-hook 'markdown-mode-hook #'lsp)
+
+(setq lsp-clients-clangd-args '("--compile-commands-dir=./"))
+
+(rc/require 'elpy)
+(elpy-enable)
+
+;;; Magit
+(rc/require 'magit)
+
+;;; LaTeX
+
+
+(provide '.emacs)
+;;; .emacs ends here
