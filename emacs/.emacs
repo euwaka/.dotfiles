@@ -122,9 +122,6 @@
 
 (setq lsp-clients-clangd-args '("--compile-commands-dir=./"))
 
-(rc/require 'elpy)
-(elpy-enable)
-
 ;;; Magit
 (rc/require 'magit)
 
