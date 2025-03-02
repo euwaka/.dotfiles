@@ -1,8 +1,0 @@
-data.location=/home/horki/.task
-
-# gamification
-uda.xp.type=string
-uda.xp.label=XP
-
-include dark-gray-256.theme
-news.version=2.6.0
