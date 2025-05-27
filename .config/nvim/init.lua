@@ -216,7 +216,7 @@ map("n", "tt", function()
 end) 
 
 -- Setup tags system
-vim.o.tags = "./tags"
+vim.opt.tags = { "./tags;" }
 map("n", "gd", "<C-]>", opts)
 map("n", "gb", "<C-t>", opts)
 map("n", "<leader>gt", function()

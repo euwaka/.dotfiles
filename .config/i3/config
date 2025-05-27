@@ -4,7 +4,7 @@ font pango:Noto Sans Mono CJK SC 11
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-scale ~/wallpapers/wallhaven-1p75xv.jpg
+exec --no-startup-id feh --bg-scale ~/wallpapers/wallhaven-852q62.png
 exec --no-startup-id /usr/lib/gsd-xsettings
 
 # Disable screen blanking and power management (thanks ChatGPT)
