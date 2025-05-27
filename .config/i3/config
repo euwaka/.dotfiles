@@ -5,7 +5,12 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-scale ~/wallpapers/wallhaven-1p75xv.jpg
+exec --no-startup-id /usr/lib/gsd-xsettings
 
+# Disable screen blanking and power management (thanks ChatGPT)
+exec --no-startup-id xset s off 
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s noblank 
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -13,6 +18,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
 # Keybindings for Applications
 bindsym Mod1+Return exec kitty 
 bindsym Mod1+d exec "rofi -modi drun,run -show drun"
@@ -64,8 +70,8 @@ bindsym Mod1+Shift+minus move scratchpad
 set $ws1 "search"
 set $ws2 "code"
 set $ws3 "read"
-set $ws4 "draw"
-set $ws5 "design"
+set $ws4 "todo"
+set $ws5 "discord"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -73,28 +79,31 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym Mod1+1 workspace 1 $ws1
-bindsym Mod1+2 workspace 2 $ws2
-bindsym Mod1+3 workspace 3 $ws3
-bindsym Mod1+4 workspace 4 $ws4
-bindsym Mod1+5 workspace 5 $ws5
-bindsym Mod1+6 workspace number $ws6
-bindsym Mod1+7 workspace number $ws7
-bindsym Mod1+8 workspace number $ws8
-bindsym Mod1+9 workspace number $ws9
-bindsym Mod1+0 workspace number $ws10
+bindsym Mod1+1 workspace $ws1
+bindsym Mod1+2 workspace $ws2
+bindsym Mod1+3 workspace $ws3
+bindsym Mod1+4 workspace $ws4
+bindsym Mod1+5 workspace $ws5
+bindsym Mod1+6 workspace $ws6
+bindsym Mod1+7 workspace $ws7
+bindsym Mod1+8 workspace $ws8
+bindsym Mod1+9 workspace $ws9
+bindsym Mod1+0 workspace $ws10
 
 # move focused container to workspace
-bindsym Mod1+Shift+1 move container to workspace number $ws1
-bindsym Mod1+Shift+2 move container to workspace number $ws2
-bindsym Mod1+Shift+3 move container to workspace number $ws3
-bindsym Mod1+Shift+4 move container to workspace number $ws4
-bindsym Mod1+Shift+5 move container to workspace number $ws5
-bindsym Mod1+Shift+6 move container to workspace number $ws6
-bindsym Mod1+Shift+7 move container to workspace number $ws7
-bindsym Mod1+Shift+8 move container to workspace number $ws8
-bindsym Mod1+Shift+9 move container to workspace number $ws9
-bindsym Mod1+Shift+0 move container to workspace number $ws10
+bindsym Mod1+Shift+1 move container to workspace $ws1
+bindsym Mod1+Shift+2 move container to workspace $ws2
+bindsym Mod1+Shift+3 move container to workspace $ws3
+bindsym Mod1+Shift+4 move container to workspace $ws4
+bindsym Mod1+Shift+5 move container to workspace $ws5
+bindsym Mod1+Shift+6 move container to workspace $ws6
+bindsym Mod1+Shift+7 move container to workspace $ws7
+bindsym Mod1+Shift+8 move container to workspace $ws8
+bindsym Mod1+Shift+9 move container to workspace $ws9
+bindsym Mod1+Shift+0 move container to workspace $ws10
+
+## Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
 
 # Logging out
 bindsym Mod1+Shift+c reload

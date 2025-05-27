@@ -24,13 +24,18 @@ opt.smartindent = true
 
 -- Transparency
 vim.g.transparency = 0.8
-vim.cmd [[
-  highlight Normal guibg=none
-  highlight NonText guibg=none
-  highlight Normal ctermbg=none
-  highlight NonText ctermbg=none
-  highlight CursorLine guibg=none
-]]
+vim.api.nvim_create_autocmd("ColorScheme", {
+    pattern = "*",
+    callback = function() 
+        vim.cmd [[
+            highlight Normal guibg=none
+            highlight NonText guibg=none
+            highlight Normal ctermbg=none
+            highlight NonText ctermbg=none
+            highlight CursorLine guibg=none ctermbg=none
+        ]]
+    end
+})
 
 -- Disable statusline
 opt.laststatus = 0
@@ -47,6 +52,11 @@ opt.writebackup = false
 -- Reduce update time
 opt.updatetime = 300
 
+-- Opens todo file
+map("n", "td", function()
+    vim.cmd("edit /home/horki/Documents/todo.txt")
+end)
+
 -- Project and Task Management
 vim.g.current_project = nil
 projects = {
@@ -60,12 +70,44 @@ projects = {
         },
     },
     {
+        name = "rayit",
+        path = "/home/horki/projects/rayit",
+        actions = {
+            {name = "build",  cmd = "make"},
+            {name = "run",    cmd = "./build/rayit"},
+            {name = "clean",  cmd = "make clean"},
+            {name = "test",   cmd = "make test"},
+            {name = "vendor", cmd = "make vendor"},
+        },
+    },
+    {
         name = ".dotfiles",
         path = "/home/horki/.dotfiles"
     },
     {
         name = "neovim",
         path = "/home/horki/.dotfiles/.config/nvim",
+    },
+    {
+        name = "Introduction to Computer Graphics and Visualization",
+        path = "/home/horki/projects/introGraphics",
+        actions = {
+            {name = "build exercise 1", cmd = "make MODE=compile AS=3 EX=1 IN=1.0"},
+            {name = "build exercise 2", cmd = "make MODE=compile AS=3 EX=2 IN=2.0"},
+            {name = "build exercise 3", cmd = "make MODE=compile AS=3 EX=3 IN=3.1"},
+            {name = "build exercise 4", cmd = "make MODE=compile AS=3 EX=4 IN=4.1"},
+            {name = "build exercise 5", cmd = "make MODE=compile AS=3 EX=5 IN=5.1"},
+            {name = "test exercise 1",  cmd = "make MODE=test AS=3 EX=1 IN=1.0; make preview AS=3 EX=1"},
+            {name = "test exercise 2",  cmd = "make MODE=test AS=3 EX=2 IN=2.0; make preview AS=3 EX=2"},
+            {name = "test exercise 3",  cmd = "make MODE=test AS=3 EX=3 IN=3.1; make preview AS=3 EX=3"},
+            {name = "test exercise 4",  cmd = "make MODE=test AS=3 EX=4 IN=4.1; make preview AS=3 EX=4"},
+            {name = "test exercise 5",  cmd = "make MODE=test AS=3 EX=5 IN=5.0; make preview AS=3 EX=5"},
+            {name = "clean",            cmd = "make MODE=clean"}
+        }, 
+    },
+    {
+        name = "Algorithms and Data Structures in C",
+        path = "/home/horki/projects/intro-ads",
     }
 }
 
@@ -119,6 +161,33 @@ map("n", "<leader>pp", function()
         end)
 end, opts)
 
+-- checks whether the commands needs tty
+local tty_cmds = { "kitten icat", "make preview" }
+local function needs_tty(cmd)
+    for _, term in ipairs(tty_cmds) do
+        if cmd:find(term) then
+            return true
+        end
+    end
+
+    return false
+end
+
+-- runs the commands either in tmux split or toggleterm,
+-- depending on whether the commands requires tty
+local function run_in_terminal_smart(cmd)
+    if needs_tty(cmd) then
+        local cmd = string.format(
+            "tmux split-window -v 'cd %s && %s; exec $SHELL'",
+            vim.fn.getcwd(),
+            cmd
+        )
+        os.execute(cmd)
+    else
+        vim.cmd(":TermExec direction=float cmd=\"" .. cmd .. "\"") 
+    end
+end
+
 map("n", "<leader>pe", function()
     if not vim.g.current_project then
         print("Project is nil.") 
@@ -134,13 +203,17 @@ map("n", "<leader>pe", function()
             -- find the command
             for _, entry in ipairs(actions) do
                 if entry.name == action_name then
-                    -- TODO: perform the action in the floating terminal                    
-                    vim.cmd(":TermExec direction=float cmd=\"" .. entry.cmd .. "\"") 
+                    run_in_terminal_smart(entry.cmd)                   
                     break
                 end
             end
         end)
 end)
+
+-- Open Floating Terminal with a keybinding
+map("n", "tt", function()
+    vim.cmd(":TermExec direction=float cmd=\"clear; echo damn you are sexy, Artur...\"")
+end) 
 
 -- Setup tags system
 vim.o.tags = "./tags"
