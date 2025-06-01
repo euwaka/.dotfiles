@@ -103,7 +103,7 @@ bindsym Mod1+Shift+9 move container to workspace $ws9
 bindsym Mod1+Shift+0 move container to workspace $ws10
 
 ## Screenshots
-bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym Print exec flameshot gui
 
 # Logging out
 bindsym Mod1+Shift+c reload

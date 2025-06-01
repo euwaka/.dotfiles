@@ -61,6 +61,19 @@ end)
 vim.g.current_project = nil
 projects = {
     {
+        name = "log",
+        path = "/home/horki/Documents/log",
+    },
+    {
+        name = "mugen",
+        path = "/home/horki/projects/mugen",
+        actions = {
+            {name = "build", cmd = "cd src/; make"},
+            {name = "clean", cmd = "cd src/; make clean"},
+            {name = "run",   cmd = "./src/mugen examples/bfcpu.mu results/microcode.bin"},
+        },
+    },
+    {
         name = "gordon",
         path = "/home/horki/projects/gordon",
         actions = {
@@ -372,5 +385,14 @@ require("lazy").setup{
             vim.cmd.colorscheme "catppuccin"
         end
     },
-    {'akinsho/toggleterm.nvim', version = "*", config = true}
+    {'akinsho/toggleterm.nvim', version = "*", config = true},
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = "cd app && npm install",
+        init = function()
+            vim.g.mkdp_filetypes = { "markdown" }
+        end,
+    }
 }
