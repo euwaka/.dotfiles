@@ -61,10 +61,6 @@ end)
 vim.g.current_project = nil
 projects = {
     {
-        name = "log",
-        path = "/home/horki/Documents/log",
-    },
-    {
         name = "mugen",
         path = "/home/horki/projects/mugen",
         actions = {
@@ -105,17 +101,18 @@ projects = {
         name = "Introduction to Computer Graphics and Visualization",
         path = "/home/horki/projects/introGraphics",
         actions = {
-            {name = "build exercise 1", cmd = "make MODE=compile AS=3 EX=1 IN=1.0"},
-            {name = "build exercise 2", cmd = "make MODE=compile AS=3 EX=2 IN=2.0"},
-            {name = "build exercise 3", cmd = "make MODE=compile AS=3 EX=3 IN=3.1"},
-            {name = "build exercise 4", cmd = "make MODE=compile AS=3 EX=4 IN=4.1"},
-            {name = "build exercise 5", cmd = "make MODE=compile AS=3 EX=5 IN=5.1"},
-            {name = "test exercise 1",  cmd = "make MODE=test AS=3 EX=1 IN=1.0; make preview AS=3 EX=1"},
-            {name = "test exercise 2",  cmd = "make MODE=test AS=3 EX=2 IN=2.0; make preview AS=3 EX=2"},
-            {name = "test exercise 3",  cmd = "make MODE=test AS=3 EX=3 IN=3.1; make preview AS=3 EX=3"},
-            {name = "test exercise 4",  cmd = "make MODE=test AS=3 EX=4 IN=4.1; make preview AS=3 EX=4"},
-            {name = "test exercise 5",  cmd = "make MODE=test AS=3 EX=5 IN=5.0; make preview AS=3 EX=5"},
-            {name = "clean",            cmd = "make MODE=clean"}
+            {name = "build task 1", cmd = "make MODE=compile AS=4 EX=3_1"},
+            {name = "build task 2", cmd = "make MODE=compile AS=4 EX=3_2"},
+            {name = "build task 3", cmd = "make MODE=compile AS=4 EX=3_3"},
+            {name = "build task 4", cmd = "make MODE=compile AS=4 EX=3_4"},
+            {name = "build task 5", cmd = "make MODE=compile AS=4 EX=3_5"},
+            {name = "run task 1",  cmd = "make MODE=run AS=4 EX=3_1 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data\"; make preview AS=4 EX=3_1"},
+            {name = "run task 2",  cmd = "make MODE=run AS=4 EX=3_2 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data --atomradius 0.001 --bondradius 0.1\"; make preview AS=4 EX=3_2"},
+            {name = "run task 3",  cmd = "make MODE=run AS=4 EX=3_3 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data\"; make preview AS=4 EX=3_3"},
+            {name = "run task 4",  cmd = "make MODE=run AS=4 EX=3_4 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data --atomradius 0.25 --bondradius 0.15\"; make preview AS=4 EX=3_4"},
+            {name = "run task 5",  cmd = "make MODE=run AS=4 EX=3_5 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data --atomradius 0.25 --bondradius 0.15\"; make preview AS=4 EX=3_5"},
+            {name = "clean",            cmd = "make MODE=clean"},
+            {name = "check task 2", cmd = "make compare AS=4 EX=3_2 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data --atomradius 0.001 --bondradius 0.1\" "},
         }, 
     },
     {
@@ -223,9 +220,24 @@ map("n", "<leader>pe", function()
         end)
 end)
 
+--- "Motivation" Phrases with deep meanings
+local phrases = {
+    "Damn you are sexy, Artur...",
+    "Why are you opening a terminal emulator inside vim inside kitty?",
+    "Remember, you are you.",
+    "You can do it.",
+    "ssh is not secure, buddy",
+    "I am just me, Artur. But that is what makes me strong.",
+    "I can tackle absolutely anyting. Except my sister's taekwando and mom's food.",
+    "Maybe switch to IDE or vscode?", 
+    "Still no Mini?",
+    "Amount of knowledge/wealth/etc. you have is not important. What is important is you and what you can do."
+}
+
 -- Open Floating Terminal with a keybinding
 map("n", "tt", function()
-    vim.cmd(":TermExec direction=float cmd=\"clear; echo damn you are sexy, Artur...\"")
+    local phrase = phrases[ math.random( #phrases ) ]
+    vim.cmd(string.format(":TermExec direction=float cmd=\"clear; echo %s\"", phrase))
 end) 
 
 -- Setup tags system
