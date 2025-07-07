@@ -1,27 +1,30 @@
+set $mod = Mod4
+
 font pango:Noto Sans Mono CJK SC 11
         
 # Execs 
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id lock
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-scale ~/wallpapers/wallhaven-852q62.png
+exec --no-startup-id feh --bg-scale ~/wallpapers/windows.png
 exec --no-startup-id /usr/lib/gsd-xsettings
+exec_always --no-startup-id flatpak run net.christianbeier.Gromit-MPX 
 
 # Disable screen blanking and power management (thanks ChatGPT)
 exec --no-startup-id xset s off 
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s noblank 
 
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym Mod1+c exec --no-startup-id "/home/horki/.dotfiles/.config/i3/change_bg"
+bindsym Mod1+l exec --no-startup-id "/home/horki/.dotfiles/.config/i3/lock"
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +10% && killall -SIGUSR1 i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -10% && killall -SIGUSR1 i3status
 
 # Keybindings for Applications
 bindsym Mod1+Return exec kitty 
 bindsym Mod1+d exec "rofi -modi drun,run -show drun"
+bindsym Mod1+b exec --no-startup-id "/home/horki/apps/boomer"
 
 # Window management
 floating_modifier Mod1
@@ -70,13 +73,18 @@ bindsym Mod1+Shift+minus move scratchpad
 set $ws1 "search"
 set $ws2 "code"
 set $ws3 "read"
-set $ws4 "todo"
-set $ws5 "discord"
+set $ws4 "draw"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
+# Assign apps to workspaces
+assign [class="firefox_firefox"] $ws1
+assign [class="MyPaint"] $ws4
+assign [class="evince"] $ws3
 
 # switch to workspace
 bindsym Mod1+1 workspace $ws1

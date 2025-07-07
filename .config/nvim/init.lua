@@ -1,29 +1,28 @@
+---------------------
+-- Neovim Settings -- 
+---------------------
 vim.g.mapleader = " "
 
-local map = vim.keymap.set
+local map  = vim.keymap.set
 local opts = { noremap = true, silent = true }
+local opt  = vim.opt
 
--- Source config
 map("n", "<leader>cs", ":source $MYVIMRC<CR>", opts)
 map("n", "<leader>cc", ":e $MYVIMRC<CR>", opts)
+map("n", "td", function() vim.cmd("edit /home/horki/Documents/todo.md") end)
+map("n", "<leader>cd", ":noh <CR>", opts)
 
-local opt = vim.opt
-
--- UI
-opt.number = true
+opt.number         = true
 opt.relativenumber = true
-opt.cursorline = true
-opt.termguicolors = true
-opt.background = "dark"
+opt.termguicolors  = true
+opt.expandtab      = true  -- spaces instead of tabs
+opt.shiftwidth     = 4     -- 4 spaces per indent
+opt.tabstop        = 4
+opt.smartindent    = true
+opt.laststatus     = 0     -- disable statusline
+opt.updatetime     = 300   -- reduce update time
+vim.g.transparency = 0.7
 
--- Indentation
-opt.expandtab   = true     -- spaces instead of tabs
-opt.shiftwidth  = 4        -- 4 spaces per indent
-opt.tabstop     = 4
-opt.smartindent = true
-
--- Transparency
-vim.g.transparency = 0.8
 vim.api.nvim_create_autocmd("ColorScheme", {
     pattern = "*",
     callback = function() 
@@ -37,102 +36,28 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     end
 })
 
--- Disable statusline
-opt.laststatus = 0
 
-opt.scrolloff  = 8
-opt.signcolumn = "no"
-opt.incsearch  = true -- incremental search
 
--- Disable swap & backup files
-opt.swapfile = false
-opt.backup = false
-opt.writebackup = false
 
--- Reduce update time
-opt.updatetime = 300
-
--- Opens todo file
-map("n", "td", function()
-    vim.cmd("edit /home/horki/Documents/todo.txt")
-end)
-
--- Project and Task Management
+---------------------------------
+-- Project and Task Management --
+---------------------------------
 vim.g.current_project = nil
-projects = {
-    {
-        name = "mugen",
-        path = "/home/horki/projects/mugen",
-        actions = {
-            {name = "build", cmd = "cd src/; make"},
-            {name = "clean", cmd = "cd src/; make clean"},
-            {name = "run",   cmd = "./src/mugen examples/bfcpu.mu results/microcode.bin"},
-        },
+local db = {
+    path = "/home/horki/projects/",
+    projects = {
+        -- "true" github projects
+        "rayit", "introGraphics", "intro-ads", "bfcpu", "ThyroCare_project",
+        
+        -- hardlinked probe projects
+        "OpenGL",
+
+        -- other projects
+        ".dotfiles",
     },
-    {
-        name = "gordon",
-        path = "/home/horki/projects/gordon",
-        actions = {
-            {name = "build", cmd = "cmake -S. -Bbuild/"},
-            {name = "clean", cmd = "rm -rf build/"},
-            {name = "run",   cmd = "./build/gordon"},
-        },
-    },
-    {
-        name = "rayit",
-        path = "/home/horki/projects/rayit",
-        actions = {
-            {name = "build",  cmd = "make"},
-            {name = "run",    cmd = "./build/rayit"},
-            {name = "clean",  cmd = "make clean"},
-            {name = "test",   cmd = "make test"},
-            {name = "vendor", cmd = "make vendor"},
-        },
-    },
-    {
-        name = ".dotfiles",
-        path = "/home/horki/.dotfiles"
-    },
-    {
-        name = "neovim",
-        path = "/home/horki/.dotfiles/.config/nvim",
-    },
-    {
-        name = "Introduction to Computer Graphics and Visualization",
-        path = "/home/horki/projects/introGraphics",
-        actions = {
-            {name = "build task 1", cmd = "make MODE=compile AS=4 EX=3_1"},
-            {name = "build task 2", cmd = "make MODE=compile AS=4 EX=3_2"},
-            {name = "build task 3", cmd = "make MODE=compile AS=4 EX=3_3"},
-            {name = "build task 4", cmd = "make MODE=compile AS=4 EX=3_4"},
-            {name = "build task 5", cmd = "make MODE=compile AS=4 EX=3_5"},
-            {name = "run task 1",  cmd = "make MODE=run AS=4 EX=3_1 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data\"; make preview AS=4 EX=3_1"},
-            {name = "run task 2",  cmd = "make MODE=run AS=4 EX=3_2 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data --atomradius 0.001 --bondradius 0.1\"; make preview AS=4 EX=3_2"},
-            {name = "run task 3",  cmd = "make MODE=run AS=4 EX=3_3 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data\"; make preview AS=4 EX=3_3"},
-            {name = "run task 4",  cmd = "make MODE=run AS=4 EX=3_4 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data --atomradius 0.25 --bondradius 0.15\"; make preview AS=4 EX=3_4"},
-            {name = "run task 5",  cmd = "make MODE=run AS=4 EX=3_5 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data --atomradius 0.25 --bondradius 0.15\"; make preview AS=4 EX=3_5"},
-            {name = "clean",            cmd = "make MODE=clean"},
-            {name = "check task 2", cmd = "make compare AS=4 EX=3_2 CLI=\"--dataFolder ~/projects/introGraphics/assignment4/data --atomradius 0.001 --bondradius 0.1\" "},
-        }, 
-    },
-    {
-        name = "Algorithms and Data Structures in C",
-        path = "/home/horki/projects/intro-ads",
-    }
 }
 
-local parse_project = function(proj_name, setting)
-    for _, project in ipairs(projects) do
-        if project.name == proj_name then
-            if setting == "path" then return project.path end
-            if setting == "actions" then return project.actions end
-        end
-    end
-
-    return nil
-end
-
-local select_from = function(data, callback)
+local select_from = function(data, callback, arg)
     local pickers = require "telescope.pickers"
     local finders = require "telescope.finders"
     local conf    = require("telescope.config").values
@@ -148,32 +73,45 @@ local select_from = function(data, callback)
             actions.select_default:replace(function()
                 actions.close(prompt_bufnr)
                 local selection = action_state.get_selected_entry()
-                callback(selection[1])
+                callback(selection[1], arg)
             end)
             return true
         end,
     }):find()
 end
 
-map("n", "<leader>pp", function()
-    select_from(
-        vim.tbl_map(function(proj) return proj.name end, projects), 
-        function(proj_name)
-            local path = parse_project(proj_name, "path")
-            if path then
-                vim.api.nvim_set_current_dir(path)
-                vim.cmd.edit(path)
-                vim.g.current_project = proj_name
-                print("Switched to " .. path)
-            else
-                print("Project not found: " .. proj_name)
-            end
-        end)
-end, opts)
+local switch_to = function(project, path)
+    local project_path = path .. project 
 
--- checks whether the commands needs tty
-local tty_cmds = { "kitten icat", "make preview" }
+    vim.api.nvim_set_current_dir(project_path)
+    vim.cmd.edit(project_path)
+    vim.g.current_project = project 
+
+    print("Switched to " .. project_path)
+end
+
+local function parse_actions(path)
+    -- parse actions.lua file under the given path
+
+    local scan = require 'plenary.scandir'
+
+    -- check whether actions.lua exists under path
+    local file = scan.scan_dir(path, { search_pattern = "actions.lua", depth = 1 })[1]
+    if not file then
+        print("No actions.lua at " .. path)
+        return nil
+    end
+
+    -- evaluate actions.lua assuming it has valid format
+    local actions = dofile(file)
+    
+    return actions
+end
+
 local function needs_tty(cmd)
+    -- checks whether the commands needs tty
+    local tty_cmds = { "kitten icat", "make preview" }
+
     for _, term in ipairs(tty_cmds) do
         if cmd:find(term) then
             return true
@@ -183,9 +121,9 @@ local function needs_tty(cmd)
     return false
 end
 
--- runs the commands either in tmux split or toggleterm,
--- depending on whether the commands requires tty
 local function run_in_terminal_smart(cmd)
+    -- runs the command either in tmux or floating terminal
+
     if needs_tty(cmd) then
         local cmd = string.format(
             "tmux split-window -v 'cd %s && %s; exec $SHELL'",
@@ -198,55 +136,76 @@ local function run_in_terminal_smart(cmd)
     end
 end
 
-map("n", "<leader>pe", function()
+local function parse_action_cmd(actions, action_name)
+    for _, action in ipairs(actions) do
+        if action.name == action_name then
+            return action.cmd
+        end
+    end
+
+    return nil
+end
+
+local function exec_actions()
     if not vim.g.current_project then
-        print("Project is nil.") 
+        print("Project is nil.")
         return
     end
 
-    local current = vim.g.current_project
-    local actions = parse_project(current, "actions")
+    -- import actions
+    local path = db.path .. vim.g.current_project
+    local actions = parse_actions(path)
+    if not actions then
+        print("No actions in " .. vim.g.current_project)
+        return
+    end
 
+    -- run action
     select_from(
         vim.tbl_map(function(entry) return entry.name end, actions),
         function(action_name)
-            -- find the command
-            for _, entry in ipairs(actions) do
-                if entry.name == action_name then
-                    run_in_terminal_smart(entry.cmd)                   
-                    break
-                end
-            end
-        end)
-end)
+            local cmd = parse_action_cmd(actions, action_name)
+            run_in_terminal_smart(cmd)
+        end,
+        nil
+    )
+end
 
---- "Motivation" Phrases with deep meanings
-local phrases = {
-    "Damn you are sexy, Artur...",
-    "Why are you opening a terminal emulator inside vim inside kitty?",
-    "Remember, you are you.",
-    "You can do it.",
-    "ssh is not secure, buddy",
-    "I am just me, Artur. But that is what makes me strong.",
-    "I can tackle absolutely anyting. Except my sister's taekwando and mom's food.",
-    "Maybe switch to IDE or vscode?", 
-    "Still no Mini?",
-    "Amount of knowledge/wealth/etc. you have is not important. What is important is you and what you can do."
-}
+map("n", "<leader>pp", function() select_from(db.projects, switch_to, db.path) end, opts)
+map("n", "<leader>pe", exec_actions, opts)
 
--- Open Floating Terminal with a keybinding
+-- Floating Terminal -- 
 map("n", "tt", function()
+    local phrases = {
+        "Damn you are sexy, Artur...",
+        "Why are you opening a terminal emulator inside vim inside kitty?",
+        "Remember, you are you.",
+        "You can do it.",
+        "ssh is not secure, buddy",
+        "I am just me, Artur. But that is what makes me strong.",
+        "Maybe switch to IDE or vscode?", 
+        "Still no Mini?",
+        "Amount of knowledge/wealth/etc. you have is not important. What is important is you and what you can do.",
+        "You can deliberately imporve any skill if you actually want to.",
+        "Given enough time, you can surpass almost anyone in anything.",
+    }
     local phrase = phrases[ math.random( #phrases ) ]
     vim.cmd(string.format(":TermExec direction=float cmd=\"clear; echo %s\"", phrase))
 end) 
 
--- Setup tags system
+
+
+
+---------------------
+-- Tags Management --
+---------------------
 vim.opt.tags = { "./tags;" }
 map("n", "gd", "<C-]>", opts)
 map("n", "gb", "<C-t>", opts)
 map("n", "<leader>gt", function()
     local tag_functions = {
         { label="C", cmd="ctags -R . /usr/include/"},
+        { label="ESP32 C/C++", cmd="ctags -R . /usr/include/ ~/repos/esp/esp-idf/components/"},
     }
 
     local labels = {}
@@ -268,7 +227,7 @@ map("n", "<leader>gt", function()
                 end
             end
 
-            if found == "false" then
+            if found == "false" then  
                 vim.notify("WARNING: No tags generation action for " .. selected)
             end
         end
@@ -276,6 +235,11 @@ map("n", "<leader>gt", function()
 end, opts)
 
 
+
+
+-------------
+-- Plugins --
+-------------
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -290,21 +254,23 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup{
-    {
-        "ThePrimeagen/harpoon",
-        config = function()
-            require("harpoon").setup()
+	   {
+	       "ThePrimeagen/harpoon",
+	       branch = "harpoon2",
+	       dependencies = { "nvim-lua/plenary.nvim" },
+	       config = function()
+	           local harpoon = require("harpoon")
+	           harpoon:setup()
 
-            local set = vim.api.nvim_set_keymap
-            local opts = { noremap = true, silent = true }
-            set('n', '<leader>a', '<cmd>lua require("harpoon.mark").add_file()<CR>', opts)
-            set('n', '<leader>1', '<cmd>lua require("harpoon.ui").nav_file(1)<CR>', opts)
-            set('n', '<leader>2', '<cmd>lua require("harpoon.ui").nav_file(2)<CR>', opts)
-            set('n', '<leader>3', '<cmd>lua require("harpoon.ui").nav_file(3)<CR>', opts)
-            set('n', '<leader>4', '<cmd>lua require("harpoon.ui").nav_file(4)<CR>', opts)
-            set('n', '<leader>5', '<cmd>lua require("harpoon.ui").nav_file(5)<CR>', opts)
-        end,   
-    },
+	           map("n", "<leader>a", function() harpoon:list():add() end)
+	           map("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+	           map("n", "<leader>1", function() harpoon:list():select(1) end)
+	           map("n", "<leader>2", function() harpoon:list():select(2) end)
+	           map("n", "<leader>3", function() harpoon:list():select(3) end)
+	           map("n", "<leader>4", function() harpoon:list():select(4) end)
+	           map("n", "<leader>5", function() harpoon:list():select(5) end)
+    	end,
+	},
     {
         "stevearc/oil.nvim",
         config = function()
@@ -332,7 +298,7 @@ require("lazy").setup{
                     show_hidden = true
                 }
             })
-            vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+            map("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory" }, opts)
         end
     },
     {
@@ -349,24 +315,30 @@ require("lazy").setup{
                         },
                     }
                 },
+                pickers = {
+                    find_files = {
+                        hidden = true,
+                    },
+                },
             }
 
             -- Keybindings for opening Telescope pickers
-            local set = vim.api.nvim_set_keymap
-            local opts = { noremap = true, silent = true }
-            set('n', '<leader>ff', '<cmd>Telescope find_files<CR>', opts)
-            set('n', '<leader>fg', '<cmd>Telescope live_grep<CR>', opts)
-            set('n', '<leader>fb', '<cmd>Telescope buffers<CR>', opts)
-            set('n', '<leader>fh', '<cmd>Telescope help_tags<CR>', opts)
+            map('n', '<leader>ff', '<cmd>Telescope find_files<CR>', opts)
+            map('n', '<leader>fg', '<cmd>Telescope live_grep<CR>', opts)
+            map('n', '<leader>fb', '<cmd>Telescope buffers<CR>', opts)
+            map('n', '<leader>fh', '<cmd>Telescope help_tags<CR>', opts)
+            map('n', '<leader>fm', '<cmd>Telescope man_pages<CR>', opts)
+            map('n', '<leader>ft', '<cmd>Telescope tags<CR>', opts)
+            map('n', '<leader>fs', '<cmd>Telescope treesitter<CR>', opts)
         end,
     },
     {
         "christoomey/vim-tmux-navigator",
         config = function()
-            vim.api.nvim_set_keymap('n', '<C-h>', '<cmd>TmuxNavigateLeft<cr>', { noremap = true, silent = true })
-            vim.api.nvim_set_keymap('n', '<C-j>', '<cmd>TmuxNavigateDown<cr>', { noremap = true, silent = true })
-            vim.api.nvim_set_keymap('n', '<C-k>', '<cmd>TmuxNavigateUp<cr>', { noremap = true, silent = true })
-            vim.api.nvim_set_keymap('n', '<C-l>', '<cmd>TmuxNavigateRight<cr>', { noremap = true, silent = true })
+            map('n', '<C-h>', '<cmd>TmuxNavigateLeft<cr>', opts)
+            map('n', '<C-j>', '<cmd>TmuxNavigateDown<cr>', opts)
+            map('n', '<C-k>', '<cmd>TmuxNavigateUp<cr>', opts)
+            map('n', '<C-l>', '<cmd>TmuxNavigateRight<cr>', opts)
         end
     },
     {
@@ -405,6 +377,22 @@ require("lazy").setup{
         build = "cd app && npm install",
         init = function()
             vim.g.mkdp_filetypes = { "markdown" }
+        end,
+    },
+    {
+        "karb94/neoscroll.nvim",
+        config = function()
+            neoscroll = require('neoscroll')
+            local keymap = {
+                ["<C-p>"] = function() neoscroll.ctrl_u({ duration = 250 }) end;
+                ["<C-n>"] = function() neoscroll.ctrl_d({ duration = 250 }) end;
+                ["<C-b>"] = function() neoscroll.ctrl_b({ duration = 450 }) end;
+                ["<C-f>"] = function() neoscroll.ctrl_f({ duration = 450 }) end;
+            }
+            local modes = { 'n', 'v', 'x' }
+            for key, func in pairs(keymap) do
+                vim.keymap.set(modes, key, func)
+            end
         end,
     }
 }
