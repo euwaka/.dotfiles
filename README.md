@@ -14,6 +14,7 @@ Ensure you have the following installed:
 - i3lock
 - scrut
 - tmux
+- x11-xkb-utils (X11)
 - kitty
 - neovim
 - i3wm

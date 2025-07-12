@@ -1,7 +1,10 @@
 set $mod = Mod4
 
 font pango:Noto Sans Mono CJK SC 11
-        
+
+# Language
+exec --no-startup-id setxkbmap -layout "us,ua" -option "grp:win_space_toggle"
+
 # Execs 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id lock

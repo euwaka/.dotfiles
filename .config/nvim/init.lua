@@ -9,7 +9,7 @@ local opt  = vim.opt
 
 map("n", "<leader>cs", ":source $MYVIMRC<CR>", opts)
 map("n", "<leader>cc", ":e $MYVIMRC<CR>", opts)
-map("n", "td", function() vim.cmd("edit /home/horki/Documents/todo.md") end)
+map("n", "td", function() vim.cmd("edit /home/horki/docs/todo.md") end)
 map("n", "<leader>cd", ":noh <CR>", opts)
 
 opt.number         = true
@@ -47,7 +47,7 @@ local db = {
     path = "/home/horki/projects/",
     projects = {
         -- "true" github projects
-        "rayit", "introGraphics", "intro-ads", "bfcpu", "ThyroCare_project",
+        "rayit", "introGraphics", "intro-ads", "bfcpu", "ThyroCare_project", "audan",
         
         -- hardlinked probe projects
         "OpenGL",

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+INDEX_FILE="$HOME/.cache/.lang_index"
+LANGUAGES=("us" "ua")
+
+TOTAL=${#LANGUAGES[@]}
+
+if [[ ! -f $IDX_FILE ]]; then
+    echo 0 > "$IDX_FILE"
+fi
+
+INDEX=$(<"$INDEX_FILE")
+setxkbmap -layout "${LANGUAGES[$INDEX]}"
+INDEX=$(( (INDEX + 1) % TOTAL ))
+echo $INDEX > "$INDEX_FILE"
