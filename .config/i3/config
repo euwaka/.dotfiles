@@ -86,8 +86,9 @@ set $ws10 "10"
 
 # Assign apps to workspaces
 assign [class="firefox_firefox"] $ws1
+assign [class="evince"]  $ws3
 assign [class="MyPaint"] $ws4
-assign [class="evince"] $ws3
+assign [class="Krita"]   $ws4
 
 # switch to workspace
 bindsym Mod1+1 workspace $ws1
