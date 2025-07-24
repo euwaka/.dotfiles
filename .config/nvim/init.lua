@@ -9,7 +9,7 @@ local opt  = vim.opt
 
 map("n", "<leader>cs", ":source $MYVIMRC<CR>", opts)
 map("n", "<leader>cc", ":e $MYVIMRC<CR>", opts)
-map("n", "td", function() vim.cmd("edit /home/horki/docs/todo.md") end)
+map("n", "td", function() vim.cmd("edit /home/horki/docs/log.md") end)
 map("n", "<leader>cd", ":noh <CR>", opts)
 
 opt.number         = true
@@ -35,7 +35,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         ]]
     end
 })
-
 
 
 
@@ -182,12 +181,12 @@ map("n", "tt", function()
         "Remember, you are you.",
         "You can do it.",
         "ssh is not secure, buddy",
-        "I am just me, Artur. But that is what makes me strong.",
+        "I am just me, and I can tackle any obstacle since I can do literally anything given time.",
         "Maybe switch to IDE or vscode?", 
         "Still no Mini?",
-        "Amount of knowledge/wealth/etc. you have is not important. What is important is you and what you can do.",
-        "You can deliberately imporve any skill if you actually want to.",
+        "You can deliberately improve any skill if you actually want to.",
         "Given enough time, you can surpass almost anyone in anything.",
+        "Motherfucker",
     }
     local phrase = phrases[ math.random( #phrases ) ]
     vim.cmd(string.format(":TermExec direction=float cmd=\"clear; echo %s\"", phrase))
@@ -254,7 +253,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup{
-	   {
+    {
 	       "ThePrimeagen/harpoon",
 	       branch = "harpoon2",
 	       dependencies = { "nvim-lua/plenary.nvim" },
@@ -360,10 +359,13 @@ require("lazy").setup{
         name="catppuccin",
         config = function()
             require("catppuccin").setup({
-                flavour = "frappe",
+                flavour = "mocha",
                 transparent_background = true,
-                term_colors = true,
-                no_italic = true,
+                show_end_of_buffer = false,
+                term_colors = false,
+                no_italic = false,
+                no_bold = false,
+                no_underline = false
             })
 
             vim.cmd.colorscheme "catppuccin"
@@ -394,5 +396,19 @@ require("lazy").setup{
                 vim.keymap.set(modes, key, func)
             end
         end,
-    }
+    },
+    {
+        'stevearc/aerial.nvim',
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
+        config = function()
+            require("aerial").setup({
+                on_attach = function(bufnr)
+                    map("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
+                    map("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
+                end,
+            })
+
+            map("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+        end,
+    },
 }

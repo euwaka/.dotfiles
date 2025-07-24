@@ -3,7 +3,7 @@
 WALLPAPER_DIR="$HOME/.dotfiles/wallpapers"
 INDEX_FILE="$HOME/.cache/.wallpaper_index"
 
-mapfile -t WALLPAPERS < <(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) | sort)
+mapfile -t WALLPAPERS < <(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | sort)
 
 TOTAL=${#WALLPAPERS[@]}
 

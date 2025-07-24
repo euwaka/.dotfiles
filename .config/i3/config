@@ -3,7 +3,7 @@ set $mod = Mod4
 font pango:Noto Sans Mono CJK SC 11
 
 # Language
-exec --no-startup-id setxkbmap -layout "us,ua" -option "grp:win_space_toggle"
+exec_always --no-startup-id setxkbmap -layout "us,ua" -option "grp:win_space_toggle"
 
 # Execs 
 exec --no-startup-id dex --autostart --environment i3
@@ -14,9 +14,9 @@ exec --no-startup-id /usr/lib/gsd-xsettings
 exec_always --no-startup-id flatpak run net.christianbeier.Gromit-MPX 
 
 # Disable screen blanking and power management (thanks ChatGPT)
-exec --no-startup-id xset s off 
-exec --no-startup-id xset -dpms
-exec --no-startup-id xset s noblank 
+exec_always --no-startup-id xset s off 
+exec_always --no-startup-id xset -dpms
+exec_always --no-startup-id xset s noblank 
 
 bindsym Mod1+c exec --no-startup-id "/home/horki/.dotfiles/.config/i3/change_bg"
 bindsym Mod1+l exec --no-startup-id "/home/horki/.dotfiles/.config/i3/lock"
@@ -73,10 +73,10 @@ bindsym Mod1+a focus parent
 bindsym Mod1+Shift+minus move scratchpad
 
 # Workspaces
-set $ws1 "search"
-set $ws2 "code"
-set $ws3 "read"
-set $ws4 "draw"
+set $ws1 "1" 
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
